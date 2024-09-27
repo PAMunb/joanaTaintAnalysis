@@ -54,9 +54,9 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [29]
       - [31]
       - [33]
-      - [39]
+      - [35]
       - [42]
-   - *Violations :* `39/70`
+   - *Violations :* `46/60`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
 
