@@ -10,13 +10,13 @@ public class Metrics {
     private double falseNegatives;
 
     private Metrics() {
-        truePositives = 0.0;
-        falsePositives = 0.0;
-        falseNegatives = 0.0;
+        this.truePositives = 0.0;
+        this.falsePositives = 0.0;
+        this.falseNegatives = 0.0;
     }
 
     public static Metrics getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new Metrics();
         }
         return instance;
@@ -34,11 +34,11 @@ public class Metrics {
     }
 
     public double precision() {
-        return truePositives / (truePositives + falsePositives);
+        return this.truePositives / (this.truePositives + this.falsePositives);
     }
 
     public double recall() {
-        return truePositives / (truePositives + falseNegatives);
+        return this.truePositives / (this.truePositives + this.falseNegatives);
     }
 
     public double f1Score() {
