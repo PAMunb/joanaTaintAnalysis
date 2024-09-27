@@ -29,7 +29,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Fails :*
       - [4]
       - [6]
-   - *Violations :* `4/26`
+   - *Violations :* `4/12`
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
