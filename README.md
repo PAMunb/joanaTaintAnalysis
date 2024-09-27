@@ -64,13 +64,12 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
 
-- **InterTest** - failed: 4, passed: 10, ignored: 0 of 14 test `(71.43%)`
+- **InterTest** - failed: 3, passed: 11, ignored: 0 of 14 test `(78.57%)`
    - *Fails :*
       - [2]
-      - [4]
-      - [5]
       - [6]
-   - *Violations :* `13/17`
+      - [9]
+   - *Violations :* `13/16`
 
 - **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
 
