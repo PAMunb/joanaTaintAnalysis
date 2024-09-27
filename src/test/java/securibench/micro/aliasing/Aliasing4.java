@@ -38,6 +38,6 @@ public class Aliasing4 extends BasicTestCase implements MicroTestCase {
     }
     
     public int getVulnerabilityCount() {
-        return 1;
+        return 1; //TO-DO: I think here it must expected two sinks
     }
 }
