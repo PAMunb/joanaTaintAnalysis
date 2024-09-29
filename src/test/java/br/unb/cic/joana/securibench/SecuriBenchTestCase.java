@@ -85,6 +85,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
         }
 
         if (totalOfExpectedVulnerabilities == totalOfVulnerabilitiesFound) {
+            System.err.println(String.format("Found %d warnings.", totalOfVulnerabilitiesFound));
             Assert.assertTrue(true);
         }
         else {
