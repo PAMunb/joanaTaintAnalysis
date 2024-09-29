@@ -23,46 +23,53 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 44, passed: 60, ignored: 0 of 104 test (57.69%)
+###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
 
-- **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
+- **AliasingTest** - failed: 1, passed: 5, ignored: 0 of 6 test `(83.33%)`
    - *Fails :*
-      - [4]
       - [6]
-   - *Violations :* `4/26`
+   - *Violations :* `6/12`
+   - *Precision :* `100%` 
+   - *Recall :* `45%`
+   - *fScore :* `63%`
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
       - [5]
    - *Violations :* `10/9`
+   - *Precision :* `90%` 
+   - *Recall :* `100%`
+   - *fScore :* `95%`
 
-- **BasicTest** - failed: 18, passed: 25, ignored: 0 of 43 test `(58.14%)`
+- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
       - [5]
       - [11]
       - [12]
-      - [13]
-      - [14]
       - [16]
       - [19]
       - [20]
       - [21]
       - [23]
-      - [25]
-      - [26]
       - [28]
       - [29]
       - [31]
       - [33]
       - [35]
       - [42]
-   - *Violations :* `46/60`
+   - *Violations :* `50/60`
+   - *Precision :* `81%` 
+   - *Recall :* `63%`
+   - *fScore :* `71%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
+   - *Violations :* `15/15`
 
 - **DataStructureTest** - failed: 0, passed: 6, ignored: 0 of 6 test `(100%)`
+   - *Violations :* `15/15`
 
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
+   - *Violations :* `3/3`
 
 - **InterTest** - failed: 4, passed: 10, ignored: 0 of 14 test `(71.43%)`
    - *Fails :*
@@ -71,8 +78,12 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [5]
       - [6]
    - *Violations :* `13/17`
+   - *Precision :* `100%` 
+   - *Recall :* `71%`
+   - *fScore :* `83%`
 
 - **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
+   - *Violations :* `3/3`
 
 - **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 test `(20%)`
    - *Fails :*
@@ -81,4 +92,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [3]
       - [5]
    - *Violations :* `5/1`
+   - *Precision :* `20%` 
+   - *Recall :* `100%`
+   - *fScore :* `33%`
 
