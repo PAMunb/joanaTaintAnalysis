@@ -27,7 +27,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **AliasingTest** - failed: 1, passed: 5, ignored: 0 of 6 test `(83.33%)`
    - *Fails :*
-      - [6]
+      - [6] *related to issue(i)*
    - *Violations :* `6/12`
    - *Precision :* `100%` 
    - *Recall :* `45%`
@@ -35,7 +35,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
-      - [5]
+      - [5] *related to issue(ii)*
    - *Violations :* `10/9`
    - *Precision :* `90%` 
    - *Recall :* `100%`
@@ -73,7 +73,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **InterTest** - failed: 2, passed: 12, ignored: 0 of 14 test `(85.71%)`
    - *Fails :*
-      - [2]
+      - [2] *related to issue(i)*
       - [6]
    - *Violations :* `13/15`
    - *Precision :* `100%` 
@@ -85,15 +85,15 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 test `(20%)`
    - *Fails :*
-      - [1]
-      - [2]
-      - [3]
-      - [5]
+      - [1] *related to issue(ii)*
+      - [2] *related to issue(ii)*
+      - [3] *related to issue(ii)*
+      - [5] *related to issue(ii)*
    - *Violations :* `5/1`
    - *Precision :* `20%` 
    - *Recall :* `100%`
    - *fScore :* `33%`
 
 ## ISSUES
-[1] When there are similar sink statements in a program, the solution recognize just the first one.
-
+(i) When there are similar sink statements in a program, the solution recognize just the first one.
+(ii) The solution does not handle *Strong Update*
