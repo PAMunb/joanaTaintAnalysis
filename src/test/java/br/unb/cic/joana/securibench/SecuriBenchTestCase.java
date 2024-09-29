@@ -57,7 +57,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
                 setUpConfiguration(c.getName() + "." + entryPointMethod());
                 found = driver.execute().size();
             } catch(Throwable e) {
-                report.add(String.format("- %s failure to execute. Error = %s", c.getName(), e.getMessage()));
+                report.add(String.format("- %s failure to execute. Error = %s", c.getName(), e));
                 failure = true;
             }
 
