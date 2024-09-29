@@ -16,7 +16,7 @@ import securibench.micro.MicroTestCase;
 
 /** 
  *  @servlet description="simple aliasing with casts" 
- *  @servlet vuln_count = "1" 
+ *  @servlet vuln_count = "2" 
  *  */
 public class Aliasing4 extends BasicTestCase implements MicroTestCase {
 	private static final String FIELD_NAME = "name";
@@ -38,6 +38,6 @@ public class Aliasing4 extends BasicTestCase implements MicroTestCase {
     }
     
     public int getVulnerabilityCount() {
-        return 1;
+        return 2;
     }
 }
