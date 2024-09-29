@@ -94,3 +94,6 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `33%`
 
+## ISSUES
+[1] When there are similar sink statements in a program, the solution recognize just the first one.
+
