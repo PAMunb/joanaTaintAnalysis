@@ -10,6 +10,7 @@ sourceMethods:
   - javax.servlet.ServletRequestWrapper.getParameterValues(Ljava/lang/String;)[Ljava/lang/String;
   - javax.servlet.http.HttpServletRequest.getParameterMap()Ljava/util/Map;
   - javax.servlet.ServletRequestWrapper.getParameterMap()Ljava/util/Map;
+  - com.oreilly.servlet.MultipartRequest.getParameter(Ljava/lang/String;)Ljava/lang/String;
   - javax.servlet.http.HttpServletRequest.getCookies()[Ljavax/servlet/http/Cookie;
   - javax.servlet.ServletRequestWrapper.getCookies()[Ljavax/servlet/http/Cookie;
   - javax.servlet.http.HttpServletRequest.getHeader(Ljava/lang/String;)Ljava/lang/String;
