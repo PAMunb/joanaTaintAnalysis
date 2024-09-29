@@ -23,15 +23,16 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 22, passed: 82, ignored: 0 of 104 test (78.85%)
+###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
 
-- **AliasingTest** - failed: 1, passed: 5, ignored: 0 of 6 test `(83.33%)`
+- **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
+      - [4] *related to issue(i)*
       - [6] *related to issue(i)*
    - *Violations :* `6/12`
    - *Precision :* `100%` 
-   - *Recall :* `45%`
-   - *fScore :* `63%`
+   - *Recall :* `36%`
+   - *fScore :* `53%`
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
@@ -71,14 +72,15 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
    - *Violations :* `3/3`
 
-- **InterTest** - failed: 2, passed: 12, ignored: 0 of 14 test `(85.71%)`
+- **InterTest** - failed: 3, passed: 11, ignored: 0 of 14 test `(85.71%)`
    - *Fails :*
       - [2] *related to issue(i)*
       - [6]
+      - [9] *related to issue(i)*
    - *Violations :* `13/15`
    - *Precision :* `100%` 
-   - *Recall :* `86%`
-   - *fScore :* `92%`
+   - *Recall :* `79%`
+   - *fScore :* `88%`
 
 - **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
    - *Violations :* `3/3`
