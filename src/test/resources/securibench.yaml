@@ -35,6 +35,8 @@ sourceMethods:
   - securibench.supportClasses.DummyServletContext.getInitParameterNames()Ljava/util/Enumeration;
   - securibench.supportClasses.DummyServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
   - securibench.supportClasses.DummyServletConfig.getInitParameterNames()Ljava/util/Enumeration;
+  - securibench.supportClasses.DummyHttpRequest.getCookies()[Ljavax/servlet/http/Cookie;
+  - securibench.supportClasses.DummyHttpRequest.getHeaders(Ljava/lang/String;)Ljava/util/Enumeration;
 
 sinkMethods:
   - java.io.PrintWriter.println(Ljava/lang/String;)V
