@@ -29,6 +29,7 @@ sourceMethods:
   - javax.servlet.ServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
   - securibench.supportClasses.DummyServletContext.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
   - securibench.supportClasses.DummyServletContext.getInitParameterNames()Ljava/util/Enumeration;
+  - securibench.supportClasses.DummyServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
 
 sinkMethods:
   - java.io.PrintWriter.println(Ljava/lang/String;)V
