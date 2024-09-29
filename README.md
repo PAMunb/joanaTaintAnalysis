@@ -23,7 +23,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
+###### failed: 23, passed: 81, ignored: 0 of 104 test (77.88%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
@@ -42,7 +42,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `95%`
 
-- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
+- **BasicTest** - failed: 13, passed: 30, ignored: 0 of 43 test `(69.77%)`
    - *Fails :*
       - [5]  *related to issue(i)*
       - [11] *related to issue(i)*
@@ -54,14 +54,13 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [23] *related to issue(i)*
       - [28] *related to issue(i)*
       - [29] *related to issue(i)*
-      - [31] --class DummyHttpRequest must be imported
-      - [33] --class DummyHttpResponse and DummyHttpRequest must be imported
+      - [31] *related to issue(i)*
       - [35] *related to issue(iii)*
       - [42] *related to issue(iii)*
    - *Violations :* `50/60`
    - *Precision :* `81%` 
-   - *Recall :* `63%`
-   - *fScore :* `71%`
+   - *Recall :* `65%`
+   - *fScore :* `72%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
