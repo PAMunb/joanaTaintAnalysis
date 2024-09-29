@@ -23,57 +23,78 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 44, passed: 60, ignored: 0 of 104 test (57.69%)
+###### failed: 22, passed: 82, ignored: 0 of 104 test (78.85%)
 
-- **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
+- **AliasingTest** - failed: 1, passed: 5, ignored: 0 of 6 test `(83.33%)`
    - *Fails :*
-      - [4]
-      - [6]
-   - *Violations :* `4/26`
+      - [6] *related to issue(i)*
+   - *Violations :* `6/12`
+   - *Precision :* `100%` 
+   - *Recall :* `45%`
+   - *fScore :* `63%`
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
-      - [5]
+      - [5] *related to issue(ii)*
    - *Violations :* `10/9`
+   - *Precision :* `90%` 
+   - *Recall :* `100%`
+   - *fScore :* `95%`
 
-- **BasicTest** - failed: 18, passed: 25, ignored: 0 of 43 test `(58.14%)`
+- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
-      - [5]  --weird behaviour when a value is sink, it does not recognize the others similar sinks 
-      - [12] --maybe it does not recognize if/else conditional or can be the same problem from test[5]
+      - [5]  *related to issue(i)*
+      - [11]
+      - [12] *related to issue(i)*
       - [16] --it is throwing an error while is analyzed
       - [19] --method prepareStatement is not recognized as a sink
       - [20] --method execute is not recognized as a sink
       - [21] --method executeUpdate is not recognized as a sink
-      - [23] --same problem as test[5]
-      - [28] --same problem as test[5]
-      - [29] --same problem as test[5]
+      - [23] *related to issue(i)*
+      - [28] *related to issue(i)*
+      - [29] *related to issue(i)*
       - [31] --class DummyHttpRequest must be imported
       - [33] --class DummyHttpResponse and DummyHttpRequest must be imported
-      - [35] --this is a false negative, as sources/sinks are shared in a common file, the solution will looks for all of them and not just the especific ones for this test. 
-      - [42] --same problem as Test[35]
-   - *Violations :* `46/60`
+      - [35] *related to issue(iii)*
+      - [42] *related to issue(iii)*
+   - *Violations :* `50/60`
+   - *Precision :* `81%` 
+   - *Recall :* `63%`
+   - *fScore :* `71%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
+   - *Violations :* `15/15`
 
 - **DataStructureTest** - failed: 0, passed: 6, ignored: 0 of 6 test `(100%)`
+   - *Violations :* `15/15`
 
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
+   - *Violations :* `3/3`
 
-- **InterTest** - failed: 4, passed: 10, ignored: 0 of 14 test `(71.43%)`
+- **InterTest** - failed: 2, passed: 12, ignored: 0 of 14 test `(85.71%)`
    - *Fails :*
-      - [2]
-      - [4]
-      - [5]
+      - [2] *related to issue(i)*
       - [6]
-   - *Violations :* `13/17`
+   - *Violations :* `13/15`
+   - *Precision :* `100%` 
+   - *Recall :* `86%`
+   - *fScore :* `92%`
 
 - **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
+   - *Violations :* `3/3`
 
 - **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 test `(20%)`
    - *Fails :*
-      - [1]
-      - [2]
-      - [3]
-      - [5]
+      - [1] *related to issue(ii)*
+      - [2] *related to issue(ii)*
+      - [3] *related to issue(ii)*
+      - [5] *related to issue(ii)*
    - *Violations :* `5/1`
+   - *Precision :* `20%` 
+   - *Recall :* `100%`
+   - *fScore :* `33%`
 
+## ISSUES
+(i) When there are similar sink statements in a program, the solution recognize just the first one.
+(ii) The solution does not handle *Strong Update*
+(iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test. 
