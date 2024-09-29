@@ -44,7 +44,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 - **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
       - [5]  *related to issue(i)*
-      - [11]
+      - [11] *related to issue(i)*
       - [12] *related to issue(i)*
       - [16] --it is throwing an error while is analyzed
       - [19] --method prepareStatement is not recognized as a sink
