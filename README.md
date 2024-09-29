@@ -48,9 +48,9 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [11] *related to issue(i)*
       - [12] *related to issue(i)*
       - [16] --it is throwing an error while is analyzed
-      - [19] --method prepareStatement is not recognized as a sink
-      - [20] --method execute is not recognized as a sink
-      - [21] --method executeUpdate is not recognized as a sink
+      - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
+      - [20] --method java.sql.Statement.execute is not recognized as a sink
+      - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
       - [23] *related to issue(i)*
       - [28] *related to issue(i)*
       - [29] *related to issue(i)*
