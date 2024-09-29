@@ -23,10 +23,11 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 22, passed: 82, ignored: 0 of 104 test (78.85%)
+###### failed: 23, passed: 81, ignored: 0 of 104 test (77.89%)
 
-- **AliasingTest** - failed: 1, passed: 5, ignored: 0 of 6 test `(83.33%)`
+- **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
+      - [4] *related to issue(i)*
       - [6] *related to issue(i)*
    - *Violations :* `6/12`
    - *Precision :* `100%` 
