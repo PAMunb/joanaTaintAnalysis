@@ -38,24 +38,19 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **BasicTest** - failed: 18, passed: 25, ignored: 0 of 43 test `(58.14%)`
    - *Fails :*
-      - [5]
-      - [11]
-      - [12]
-      - [13]
-      - [14]
-      - [16]
-      - [19]
-      - [20]
-      - [21]
-      - [23]
-      - [25]
-      - [26]
-      - [28]
-      - [29]
-      - [31]
-      - [33]
-      - [35]
-      - [42]
+      - [5]  --weird behaviour when a value is sink, it does not recognize the others similar sinks 
+      - [12] --maybe it does not recognize if/else conditional or can be the same problem from test[5]
+      - [16] --it is throwing an error while is analyzed
+      - [19] --method prepareStatement is not recognized as a sink
+      - [20] --method execute is not recognized as a sink
+      - [21] --method executeUpdate is not recognized as a sink
+      - [23] --same problem as test[5]
+      - [28] --same problem as test[5]
+      - [29] --same problem as test[5]
+      - [31] --class DummyHttpRequest must be imported
+      - [33] --class DummyHttpResponse and DummyHttpRequest must be imported
+      - [35] --this is a false negative, as sources/sinks are shared in a common file, the solution will looks for all of them and not just the especific ones for this test. 
+      - [42] --same problem as Test[35]
    - *Violations :* `46/60`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
