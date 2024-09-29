@@ -66,7 +66,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Violations :* `15/15`
 
 - **DataStructureTest** - failed: 0, passed: 6, ignored: 0 of 6 test `(100%)`
-   - *Violations :* `15/15`
+   - *Violations :* `6/6`
 
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
    - *Violations :* `3/3`
