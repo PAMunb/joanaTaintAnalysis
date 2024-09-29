@@ -6,6 +6,10 @@ thirdPartyLibraries:
 sourceMethods:
   - javax.servlet.http.HttpServletRequest.getParameter(Ljava/lang/String;)Ljava/lang/String;
   - javax.servlet.ServletRequestWrapper.getParameter(Ljava/lang/String;)Ljava/lang/String;
+  - javax.servlet.http.HttpServletRequest.getParameterValues(Ljava/lang/String;)[Ljava/lang/String;
+  - javax.servlet.ServletRequestWrapper.getParameterValues(Ljava/lang/String;)[Ljava/lang/String;
+  - javax.servlet.http.HttpServletRequest.getParameterMap()Ljava/util/Map;
+  - javax.servlet.ServletRequestWrapper.getParameterMap()Ljava/util/Map;
   - javax.servlet.http.HttpServletRequest.getCookies()[Ljavax/servlet/http/Cookie;
   - javax.servlet.ServletRequestWrapper.getCookies()[Ljavax/servlet/http/Cookie;
   - javax.servlet.http.HttpServletRequest.getHeader(Ljava/lang/String;)Ljava/lang/String;
@@ -29,6 +33,8 @@ sourceMethods:
   - javax.servlet.ServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
   - securibench.supportClasses.DummyServletContext.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
   - securibench.supportClasses.DummyServletContext.getInitParameterNames()Ljava/util/Enumeration;
+  - securibench.supportClasses.DummyServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
+  - securibench.supportClasses.DummyServletConfig.getInitParameterNames()Ljava/util/Enumeration;
 
 sinkMethods:
   - java.io.PrintWriter.println(Ljava/lang/String;)V
