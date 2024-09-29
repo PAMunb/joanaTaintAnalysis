@@ -31,8 +31,8 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [6] *related to issue(i)*
    - *Violations :* `6/12`
    - *Precision :* `100%` 
-   - *Recall :* `45%`
-   - *fScore :* `63%`
+   - *Recall :* `36%`
+   - *fScore :* `53%`
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
