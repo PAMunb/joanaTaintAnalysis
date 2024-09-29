@@ -38,6 +38,7 @@ sourceMethods:
 
 sinkMethods:
   - java.io.PrintWriter.println(Ljava/lang/String;)V
+  - java.io.PrintWriter.println([Ljava/lang/String;)V
   - java.io.PrintWriter.println(Ljava/lang/Object;)V
   - java.io.File.createNewFile()Z
   - java.io.FileWriter.<init>(Ljava/lang/String;)V
