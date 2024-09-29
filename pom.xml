@@ -74,6 +74,11 @@
       <artifactId>reflections</artifactId>
       <version>0.10.2</version>
     </dependency>
+    <dependency>
+      <groupId>com.jfinal</groupId>
+      <artifactId>cos</artifactId>
+      <version>2022.2</version>
+    </dependency>
   </dependencies>
 
   <build>
