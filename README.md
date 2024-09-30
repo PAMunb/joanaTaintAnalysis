@@ -23,7 +23,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    
 ## TEST
 
-###### failed: 23, passed: 81, ignored: 0 of 104 test (77.88%)
+###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
@@ -42,7 +42,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `95%`
 
-- **BasicTest** - failed: 13, passed: 30, ignored: 0 of 43 test `(69.77%)`
+- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
       - [5]  *related to issue(i)*
       - [11] *related to issue(i)*
@@ -56,11 +56,12 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [29] *related to issue(i)*
       - [31] *related to issue(i)*
       - [35] *related to issue(iii)*
+      - [40] *flaky*
       - [42] *related to issue(iii)*
-   - *Violations :* `50/60`
+   - *Violations :* `50/61`
    - *Precision :* `81%` 
-   - *Recall :* `65%`
-   - *fScore :* `72%`
+   - *Recall :* `65.5%`
+   - *fScore :* `71.5%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
