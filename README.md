@@ -44,30 +44,30 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
-      - [5]
-      - [11]
-      - [12]
-      - [16]
-      - [19]
-      - [20]
-      - [21]
-      - [23]
-      - [28]
-      - [29]
-      - [31]
-      - [33]
-      - [35]
-      - [42]
-   - *Violations :* `50/60`
+      - [5]  *related to issue(i)*
+      - [11] *related to issue(i)*
+      - [12] *related to issue(i)*
+      - [16] --it is throwing an error while is analyzed
+      - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
+      - [20] --method java.sql.Statement.execute is not recognized as a sink
+      - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
+      - [23] *related to issue(i)*
+      - [28] *related to issue(i)*
+      - [29] *related to issue(i)*
+      - [31] *related to issue(i)*
+      - [35] *related to issue(iii)*
+      - [40] *flaky*
+      - [42] *related to issue(iii)*
+   - *Violations :* `50/61`
    - *Precision :* `81%` 
-   - *Recall :* `63%`
-   - *fScore :* `71%`
+   - *Recall :* `65.5%`
+   - *fScore :* `71.5%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
 
 - **DataStructureTest** - failed: 0, passed: 6, ignored: 0 of 6 test `(100%)`
-   - *Violations :* `15/15`
+   - *Violations :* `6/6`
 
 - **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
    - *Violations :* `3/3`
@@ -97,5 +97,6 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *fScore :* `33%`
 
 ## ISSUES
-(i) When there are similar sink statements in a program, the solution recognize just the first one.
-(ii) The solution does not handle *Strong Update*
+(i) When there are similar sink statements in a program, the solution recognize just the first one;
+(ii) The solution does not handle *Strong Update*;
+(iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test.
