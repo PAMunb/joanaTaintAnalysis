@@ -7,6 +7,10 @@ A small benchmark for testin the Joana capabilities for taint analysis.
 In the very first moment, execute the `setup.sh` script to download the Joana 
 library and configure it as a local maven dependency. 
 
+## TEST
+
+Run an specific test: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.SpecificTest"`
+
 ### Executing the micro securibench
 
 Currently, you might run the 'securibench' benchmark using JUnit test cases. Such as:
@@ -21,7 +25,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.SessionTestSuite"`
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.StrongUpdateTestSuite"`
    
-## TEST
+
 
 ###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
 
