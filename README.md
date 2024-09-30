@@ -97,6 +97,6 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *fScore :* `33%`
 
 ## ISSUES
-(i) When there are similar sink statements in a program, the solution recognize just the first one;
-(ii) The solution does not handle *Strong Update*;
-(iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test.
+- (i) When there are similar sink statements in a program, the solution recognize just the first one;
+- (ii) The solution does not handle *Strong Update*;
+- (iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test.
