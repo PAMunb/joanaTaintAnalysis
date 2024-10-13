@@ -6,7 +6,7 @@ public class AliasingTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.aliasing";
+        return "securibench.v1.micro.aliasing";
     }
 
     @Override

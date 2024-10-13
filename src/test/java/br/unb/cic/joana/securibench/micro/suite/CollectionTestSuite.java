@@ -6,7 +6,7 @@ public class CollectionTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.collections";
+        return "securibench.v1.micro.collections";
     }
 
     @Override

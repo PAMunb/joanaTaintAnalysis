@@ -6,7 +6,7 @@ public class InterTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.inter";
+        return "securibench.v1.micro.inter";
     }
 
     @Override

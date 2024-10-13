@@ -6,7 +6,7 @@ public class FactoryTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.factories";
+        return "securibench.v1.micro.factories";
     }
 
     @Override

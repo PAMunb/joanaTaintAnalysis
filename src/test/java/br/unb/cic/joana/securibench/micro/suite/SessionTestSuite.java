@@ -6,7 +6,7 @@ public class SessionTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.session";
+        return "securibench.v1.micro.session";
     }
 
     @Override

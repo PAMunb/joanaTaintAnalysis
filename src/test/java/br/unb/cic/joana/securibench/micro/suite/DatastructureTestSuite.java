@@ -6,7 +6,7 @@ public class DatastructureTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.datastructures";
+        return "securibench.v1.micro.datastructures";
     }
 
     @Override

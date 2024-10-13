@@ -9,7 +9,7 @@ import java.util.Set;
 public class SpecificTest extends SecuriBenchTestCase {
     @Override
     public String basePackage() {
-        return "securibench.micro.basic";
+        return "securibench.v1.micro.basic";
     }
 
     @Override

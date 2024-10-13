@@ -6,7 +6,7 @@ public class ArrayTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.arrays";
+        return "securibench.v1.micro.arrays";
     }
 
     @Override

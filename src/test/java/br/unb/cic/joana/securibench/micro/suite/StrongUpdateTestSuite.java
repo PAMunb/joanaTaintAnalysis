@@ -6,7 +6,7 @@ public class StrongUpdateTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.micro.strong_updates";
+        return "securibench.v1.micro.strong_updates";
     }
 
     @Override
