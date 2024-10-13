@@ -1,7 +1,7 @@
 package br.unb.cic.joana.securibench.micro.suite;
 
 import br.unb.cic.joana.securibench.SecuriBenchTestCase;
-import securibench.micro.MicroTestCase;
+import securibench.v1.micro.MicroTestCase;
 
 import java.util.HashSet;
 import java.util.Set;

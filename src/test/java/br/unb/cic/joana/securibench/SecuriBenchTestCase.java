@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
-import securibench.micro.MicroTestCase;
+import securibench.v1.micro.MicroTestCase;
 
 import java.util.ArrayList;
 import java.util.Collections;
