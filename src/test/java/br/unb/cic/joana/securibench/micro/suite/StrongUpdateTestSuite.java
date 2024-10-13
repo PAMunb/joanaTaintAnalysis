@@ -1,6 +1,6 @@
-package br.unb.cic.joana.securibench.micro.suite;
+package br.unb.cic.joana.securibench.v1.micro.suite;
 
-import br.unb.cic.joana.securibench.SecuriBenchTestCase;
+import br.unb.cic.joana.securibench.v1.SecuriBenchTestCase;
 
 public class StrongUpdateTestSuite extends SecuriBenchTestCase {
 

@@ -1,4 +1,4 @@
-package br.unb.cic.joana.securibench;
+package br.unb.cic.joana.securibench.v1;
 
 import br.unb.cic.joana.JoanaTestCase;
 import br.unb.cic.joana.Metrics;
