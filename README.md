@@ -37,7 +37,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.StrongUpdateTestSuite"`
    
 
-###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
+###### failed: 24, passed: 79, ignored: 0 of 103 test (76.70%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
@@ -56,7 +56,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `95%`
 
-- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
+- **BasicTest** - failed: 14, passed: 28, ignored: 0 of 42 test `(66.67%)`
    - *Fails :*
       - [5]  *related to issue(i)* <!-- Expecting 3 but found 1 vulnerabilities. -->
       - [11] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
@@ -72,10 +72,10 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [35] *related to issue(iii)* <!-- Expecting 6 but found 12 vulnerabilities. -->
       - [40] *flaky* <!--  Expecting 1 but found 0 vulnerabilities. -->
       - [42] *related to issue(iii)* <!-- Expecting 1 but found 2 vulnerabilities. -->
-   - *Violations :* `50/61`
+   - *Violations :* `52/61`
    - *Precision :* `81%` 
-   - *Recall :* `65.5%`
-   - *fScore :* `71.5%`
+   - *Recall :* `65%`
+   - *fScore :* `72%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
