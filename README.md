@@ -37,13 +37,12 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.StrongUpdateTestSuite"`
    
 
-
 ###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
-      - [4] *related to issue(i)*
-      - [6] *related to issue(i)*
+      - [4] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [6] *related to issue(i)* <!-- Expecting 7 but found 1 vulnerabilities. -->
    - *Violations :* `6/12`
    - *Precision :* `100%` 
    - *Recall :* `36%`
@@ -51,7 +50,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
-      - [5] *related to issue(ii)*
+      - [5] *related to issue(ii)* <!-- Expecting 0 but found 1 vulnerabilities. -->
    - *Violations :* `10/9`
    - *Precision :* `90%` 
    - *Recall :* `100%`
@@ -59,20 +58,20 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
    - *Fails :*
-      - [5]  *related to issue(i)*
-      - [11] *related to issue(i)*
-      - [12] *related to issue(i)*
-      - [16] --it is throwing an error while is analyzed
-      - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
-      - [20] --method java.sql.Statement.execute is not recognized as a sink
-      - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
-      - [23] *related to issue(i)*
-      - [28] *related to issue(i)*
-      - [29] *related to issue(i)*
-      - [31] *related to issue(i)*
-      - [35] *related to issue(iii)*
-      - [40] *flaky*
-      - [42] *related to issue(iii)*
+      - [5]  *related to issue(i)* <!-- Expecting 3 but found 1 vulnerabilities. -->
+      - [11] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [12] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [16] --it is throwing an error while is analyzed <!--  -->
+      - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink <!-- Expecting 1 but found 0 vulnerabilities. -->
+      - [20] --method java.sql.Statement.execute is not recognized as a sink <!-- Expecting 1 but found 0 vulnerabilities. -->
+      - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink <!-- Expecting 4 but found 0 vulnerabilities. -->
+      - [23] *related to issue(i)* <!-- Expecting 3 but found 2 vulnerabilities. -->
+      - [28] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [29] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [31] *related to issue(i)* <!-- Expecting 3 but found 1 vulnerabilities. -->
+      - [35] *related to issue(iii)* <!-- Expecting 6 but found 12 vulnerabilities. -->
+      - [40] *flaky* <!--  Expecting 1 but found 0 vulnerabilities. -->
+      - [42] *related to issue(iii)* <!-- Expecting 1 but found 2 vulnerabilities. -->
    - *Violations :* `50/61`
    - *Precision :* `81%` 
    - *Recall :* `65.5%`
@@ -89,9 +88,9 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **InterTest** - failed: 3, passed: 11, ignored: 0 of 14 test `(85.71%)`
    - *Fails :*
-      - [2] *related to issue(i)*
-      - [6]
-      - [9] *related to issue(i)*
+      - [2] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
+      - [6] <!-- Expecting 1 but found 0 vulnerabilities. -->
+      - [9] *related to issue(i)* <!-- Expecting 2 but found 1 vulnerabilities. -->
    - *Violations :* `13/15`
    - *Precision :* `100%` 
    - *Recall :* `79%`
@@ -102,10 +101,10 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 test `(20%)`
    - *Fails :*
-      - [1] *related to issue(ii)*
-      - [2] *related to issue(ii)*
-      - [3] *related to issue(ii)*
-      - [5] *related to issue(ii)*
+      - [1] *related to issue(ii)* <!-- Expecting 0 but found 1 vulnerabilities. -->
+      - [2] *related to issue(ii)* <!-- Expecting 0 but found 1 vulnerabilities. -->
+      - [3] *related to issue(ii)* <!-- Expecting 0 but found 1 vulnerabilities. -->
+      - [5] *related to issue(ii)* <!-- Expecting 0 but found 1 vulnerabilities. -->
    - *Violations :* `5/1`
    - *Precision :* `20%` 
    - *Recall :* `100%`
