@@ -9,7 +9,7 @@ library and configure it as a local maven dependency.
 
 ## TEST
 
-Run an specific test: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.SpecificTest"`
+Run an specific test: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.SpecificTest"`
 
 ### Executing the micro securibench
 
