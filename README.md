@@ -40,7 +40,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.StrongUpdateTestSuite"` -->
 
 
-###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
+###### failed: 27, passed: 76, ignored: 0 of 103 test (73.78%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
