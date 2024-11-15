@@ -59,12 +59,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `95%`
 
-- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
+- **BasicTest** - failed: 17, passed: 25, ignored: 0 of 42 test `(59.52%)`
    - *Fails :*
       - [5]  *related to issue(i)*
       - [11] *related to issue(i)*
       - [12] *related to issue(i)*
-      - [16] --it is throwing an error while is analyzed
+      - [13] Expecting 1 but found 0 vulnerabilities.
+      - [14] Expecting 1 but found 0 vulnerabilities.
+      <!-- - [16] --it is throwing an error while is analyzed -->
       - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
       - [20] --method java.sql.Statement.execute is not recognized as a sink
       - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
@@ -72,13 +74,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [28] *related to issue(i)*
       - [29] *related to issue(i)*
       - [31] *related to issue(i)*
+      - [33] Expecting 1 but found 0 vulnerabilities.
       - [35] *related to issue(iii)*
       - [40] *flaky*
       - [42] *related to issue(iii)*
-   - *Violations :* `50/61`
+   - *Violations :* `45/61`
    - *Precision :* `81%` 
-   - *Recall :* `65.5%`
-   - *fScore :* `71.5%`
+   - *Recall :* `54%`
+   - *fScore :* `65%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
