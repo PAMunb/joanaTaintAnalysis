@@ -1,4 +1,4 @@
-package br.unb.cic.joana.securibench.v1;
+package br.unb.cic.joana.securibench.v2;
 
 import br.unb.cic.joana.JoanaTestCase;
 import br.unb.cic.joana.Metrics;
@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
-import securibench.v1.micro.MicroTestCase;
+import securibench.v2.micro.MicroTestCase;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,7 +18,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
 
     @Override
     public String configurationFile() {
-        return "securibench.yaml";
+        return "securibench_v2.yaml";
     }
 
     public abstract String entryPointMethod();

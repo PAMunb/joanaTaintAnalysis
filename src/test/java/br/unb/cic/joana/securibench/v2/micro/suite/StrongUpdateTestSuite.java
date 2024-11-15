@@ -1,12 +1,12 @@
-package br.unb.cic.joana.securibench.v1.micro.suite;
+package br.unb.cic.joana.securibench.v2.micro.suite;
 
-import br.unb.cic.joana.securibench.v1.SecuriBenchTestCase;
+import br.unb.cic.joana.securibench.v2.SecuriBenchTestCase;
 
 public class StrongUpdateTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.v1.micro.strong_updates";
+        return "securibench.v2.micro.strong_updates";
     }
 
     @Override

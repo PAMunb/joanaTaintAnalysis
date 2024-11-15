@@ -1,12 +1,12 @@
-package br.unb.cic.joana.securibench.v1.micro.suite;
+package br.unb.cic.joana.securibench.v2.micro.suite;
 
-import br.unb.cic.joana.securibench.v1.SecuriBenchTestCase;
+import br.unb.cic.joana.securibench.v2.SecuriBenchTestCase;
 
 public class DatastructureTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.v1.micro.datastructures";
+        return "securibench.v2.micro.datastructures";
     }
 
     @Override

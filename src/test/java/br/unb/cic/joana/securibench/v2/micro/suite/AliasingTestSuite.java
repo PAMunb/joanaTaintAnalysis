@@ -1,16 +1,16 @@
-package br.unb.cic.joana.securibench.v1.micro.suite;
+package br.unb.cic.joana.securibench.v2.micro.suite;
 
-import br.unb.cic.joana.securibench.v1.SecuriBenchTestCase;
+import br.unb.cic.joana.securibench.v2.SecuriBenchTestCase;
 
 public class AliasingTestSuite extends SecuriBenchTestCase {
 
     @Override
     public String basePackage() {
-        return "securibench.v1.micro.aliasing";
+        return "securibench.v2.micro.aliasing";
     }
 
     @Override
     public String entryPointMethod() {
-        return "doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V";
+        return "doGet(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V";
     }
 }

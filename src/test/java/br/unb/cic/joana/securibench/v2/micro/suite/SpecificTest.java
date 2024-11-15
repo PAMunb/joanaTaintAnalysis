@@ -1,7 +1,7 @@
-package br.unb.cic.joana.securibench.v1.micro.suite;
+package br.unb.cic.joana.securibench.v2.micro.suite;
 
-import br.unb.cic.joana.securibench.v1.SecuriBenchTestCase;
-import securibench.v1.micro.MicroTestCase;
+import br.unb.cic.joana.securibench.v2.SecuriBenchTestCase;
+import securibench.v2.micro.MicroTestCase;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,7 +9,7 @@ import java.util.Set;
 public class SpecificTest extends SecuriBenchTestCase {
     @Override
     public String basePackage() {
-        return "securibench.v1.micro.basic";
+        return "securibench.v2.micro.basic";
     }
 
     @Override
