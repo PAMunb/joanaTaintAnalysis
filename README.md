@@ -9,25 +9,38 @@ library and configure it as a local maven dependency.
 
 ## TEST
 
-Run an specific test: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.SpecificTest"`
+Run an specific test: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.SpecificTest"`
 
 ### Executing the micro securibench
 
 Currently, you might run the 'securibench' benchmark using JUnit test cases. Such as:
 
-   * Aliasing test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.AliasingTestSuite"`
-   * Array test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.ArrayTestSuite"`
-   * Basic test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.BasicTestSuite"`
-   * Collection test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.CollectionTestSuite"`
-   * Datastructure test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.DatastructureTestSuite"`
-   * Factory test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.FactoryTestSuite"`
-   * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.InterTestSuite"`
-   * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.SessionTestSuite"`
-   * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.micro.suite.StrongUpdateTestSuite"`
+   * Aliasing test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.AliasingTestSuite"`
+   * Array test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.ArrayTestSuite"`
+   * Basic test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.BasicTestSuite"`
+   * Collection test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.CollectionTestSuite"`
+   * Datastructure test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.DatastructureTestSuite"`
+   * Factory test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.FactoryTestSuite"`
+   * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.InterTestSuite"`
+   * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.SessionTestSuite"`
+   * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.StrongUpdateTestSuite"`
    
+<!-- ### Executing the micro securibench
+
+Currently, you might run the 'securibench' benchmark using JUnit test cases. Such as:
+
+   * Aliasing test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.AliasingTestSuite"`
+   * Array test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.ArrayTestSuite"`
+   * Basic test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.BasicTestSuite"`
+   * Collection test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.CollectionTestSuite"`
+   * Datastructure test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.DatastructureTestSuite"`
+   * Factory test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.FactoryTestSuite"`
+   * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.InterTestSuite"`
+   * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.SessionTestSuite"`
+   * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.StrongUpdateTestSuite"` -->
 
 
-###### failed: 24, passed: 80, ignored: 0 of 104 test (76.92%)
+###### failed: 27, passed: 76, ignored: 0 of 103 test (73.78%)
 
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
@@ -46,12 +59,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    - *Recall :* `100%`
    - *fScore :* `95%`
 
-- **BasicTest** - failed: 14, passed: 29, ignored: 0 of 43 test `(67.44%)`
+- **BasicTest** - failed: 17, passed: 25, ignored: 0 of 42 test `(59.52%)`
    - *Fails :*
       - [5]  *related to issue(i)*
       - [11] *related to issue(i)*
       - [12] *related to issue(i)*
-      - [16] --it is throwing an error while is analyzed
+      - [13] Expecting 1 but found 0 vulnerabilities.
+      - [14] Expecting 1 but found 0 vulnerabilities.
+      <!-- - [16] --it is throwing an error while is analyzed -->
       - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
       - [20] --method java.sql.Statement.execute is not recognized as a sink
       - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
@@ -59,13 +74,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [28] *related to issue(i)*
       - [29] *related to issue(i)*
       - [31] *related to issue(i)*
+      - [33] Expecting 1 but found 0 vulnerabilities.
       - [35] *related to issue(iii)*
       - [40] *flaky*
       - [42] *related to issue(iii)*
-   - *Violations :* `50/61`
+   - *Violations :* `45/61`
    - *Precision :* `81%` 
-   - *Recall :* `65.5%`
-   - *fScore :* `71.5%`
+   - *Recall :* `54%`
+   - *fScore :* `65%`
   
 - **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
    - *Violations :* `15/15`
@@ -81,7 +97,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
       - [2] *related to issue(i)*
       - [6]
       - [9] *related to issue(i)*
-   - *Violations :* `13/15`
+   - *Violations :* `13/16`
    - *Precision :* `100%` 
    - *Recall :* `79%`
    - *fScore :* `88%`
@@ -104,3 +120,10 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 - (i) When there are similar sink statements in a program, the solution recognize just the first one;
 - (ii) The solution does not handle *Strong Update*;
 - (iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test.
+
+
+java.lang.IllegalStateException: 
+could not resolve 
+< Application, Lsecuribench/v2/micro/aliasing/Aliasing3, 
+doGet(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V 
+>

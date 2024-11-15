@@ -1,0 +1,49 @@
+applicationClassPath: ignore
+entryPointMethod: ignore
+thirdPartyLibraries:
+  - ~/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar
+sourceMethods:
+  - jakarta.servlet.http.HttpServletRequest.getParameter(Ljava/lang/String;)Ljava/lang/String;
+  - jakarta.servlet.ServletRequestWrapper.getParameter(Ljava/lang/String;)Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getParameterValues(Ljava/lang/String;)[Ljava/lang/String;
+  - jakarta.servlet.ServletRequestWrapper.getParameterValues(Ljava/lang/String;)[Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getParameterMap()Ljava/util/Map;
+  - jakarta.servlet.ServletRequestWrapper.getParameterMap()Ljava/util/Map;
+  - com.oreilly.servlet.MultipartRequest.getParameter(Ljava/lang/String;)Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getCookies()[Ljakarta/servlet/http/Cookie;
+  - jakarta.servlet.ServletRequestWrapper.getCookies()[Ljakarta/servlet/http/Cookie;
+  - jakarta.servlet.http.HttpServletRequest.getHeader(Ljava/lang/String;)Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getHeader(Ljava/lang/String;)Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getHeaderNames()Ljava/util/Enumeration;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getHeaderNames()Ljava/util/Enumeration;
+  - jakarta.servlet.http.HttpServletRequest.getProtocol()Ljava/lang/String;
+  - jakarta.servlet.ServletRequestWrapper.getProtocol()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getScheme()Ljava/lang/String;
+  - jakarta.servlet.ServletRequestWrapper.getScheme()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getAuthType()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getAuthType()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getQueryString()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getQueryString()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getRemoteUser()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getRemoteUser()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getRequestURL()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequestWrapper.getRequestURL()Ljava/lang/String;
+  - jakarta.servlet.http.HttpServletRequest.getInputStream()Ljakarta/servlet/ServletInputStream;
+  - jakarta.servlet.ServletRequestWrapper.getInputStream()Ljakarta/servlet/ServletInputStream;
+  - jakarta.servlet.ServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
+  - securibench.v2.supportClasses.DummyServletContext.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
+  - securibench.v2.supportClasses.DummyServletContext.getInitParameterNames()Ljava/util/Enumeration;
+  - securibench.v2.supportClasses.DummyServletConfig.getInitParameter(Ljava/lang/String;)Ljava/lang/String;
+  - securibench.v2.supportClasses.DummyServletConfig.getInitParameterNames()Ljava/util/Enumeration;
+  - securibench.v2.supportClasses.DummyHttpRequest.getCookies()[Ljakarta/servlet/http/Cookie;
+  - securibench.v2.supportClasses.DummyHttpRequest.getHeaders(Ljava/lang/String;)Ljava/util/Enumeration;
+
+sinkMethods:
+  - java.io.PrintWriter.println(Ljava/lang/String;)V
+  - java.io.PrintWriter.println([Ljava/lang/String;)V
+  - java.io.PrintWriter.println(Ljava/lang/Object;)V
+  - java.io.File.createNewFile()Z
+  - java.io.FileWriter.<init>(Ljava/lang/String;)V
+  - java.io.FileInputStream.<init>(Ljava/lang/String;)V
+  - jakarta.servlet.http.HttpServletResponse.sendRedirect(Ljava/lang/String;)V
+  - jakarta.servlet.http.HttpServletResponseWrapper.sendRedirect(Ljava/lang/String;)V
