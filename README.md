@@ -42,6 +42,25 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 ###### failed: 27, passed: 76, ignored: 0 of 103 test (73.78%)
 
+<!-- |     Test      |   TP    | FP  | 
+|:-------------:|:-------:|:---:|
+|   Aliasing    |  6/12   |  0  |   
+|     Array     |   9/9   |  4  |   
+|     Basic     |  58/60  |  1  |  
+|  Collection   |  14/14  |  0  | 
+| DataStructure |   5/5   |  1  |  
+|    Factory    |   3/3   |  1  |  
+|     Inter     |  14/16  |  0  |  
+|    Session    |   3/3   |  0  |  
+| StrongUpdate  |   0/0   |  2  |   
+|   **TOTAL**   | 117/121 |  9  |   
+
+- **Precision:** 0.93
+- **Recall:** 0.97
+- **F-score:** 0.95 -->
+
+#### Detailed information
+
 - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
    - *Fails :*
       - [4] *related to issue(i)*
