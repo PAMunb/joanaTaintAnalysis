@@ -61,14 +61,28 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 #### Detailed information
 
-- **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test `(66.67%)`
+<!-- - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test 
    - *Fails :*
-      - [4] *related to issue(i)*
+      - [4] 
       - [6] *related to issue(i)*
    - *Violations :* `6/12`
    - *Precision :* `100%` 
    - *Recall :* `36%`
-   - *fScore :* `53%`
+   - *fScore :* `53%` -->
+
+<!-- TO-DO: The amount of expected differs a bit from the computation in JSVFA project -->
+- **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 tests. `(66.67%)`
+
+
+|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score | Comments|
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|:-------:|
+|   Aliasing1    |    1     |   1    |   ✅   |  1  |  0  |     -     |   -    |    -    |    -    |
+|   Aliasing2    |    0     |   0    |   ✅   |  0  |  0  |     -     |   -    |    -    |    -    |
+|   Aliasing3    |    0     |   0    |   ✅   |  0  |  0  |     -     |   -    |    -    |    -    |
+|   Aliasing4    |    2     |   1    |   ❌   |  1  |  0  |     -     |   -    |    -    |    *related to issue(i)*    |
+|   Aliasing5    |    1     |   1    |   ✅   |  1  |  0  |     -     |   -    |    -    |    -    |
+|   Aliasing6    |    7     |   1    |   ❌   |  1  |  0  |     -     |   -    |    -    |    *related to issue(i)*    |
+|     TOTAL      |    11    |   4    |  4/6   |  4  |  0  |           |        |         |         |
 
 - **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
    - *Fails :*
