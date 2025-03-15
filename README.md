@@ -42,7 +42,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 ###### failed: 27, passed: 76, ignored: 0 of 103 test (73.78%)
 
-<!-- |     Test      |   TP    | FP  | 
+|     Test      |   TP    | FP  | 
 |:-------------:|:-------:|:---:|
 |   Aliasing    |  6/12   |  0  |   
 |     Array     |   9/9   |  4  |   
@@ -57,7 +57,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **Precision:** 0.93
 - **Recall:** 0.97
-- **F-score:** 0.95 -->
+- **F-score:** 0.95
 
 #### Detailed information
 
