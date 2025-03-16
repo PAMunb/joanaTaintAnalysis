@@ -9,7 +9,7 @@
 |    Aliasing     |   2/6   | 4/11  | 2  |
 |      Array      |  9/10   |  9/9  | 1  |
 |      Basic      |  25/42  | 39/61 | 6  |
-|   Collection    |  0/14   | 0/14  | 0  |
+|   Collection    |  13/14  | 14/14 | 1  |
 |  DataStructure  |   0/6   |  0/5  | 0  | 
 |     Factory     |   0/3   |  0/3  | 0  | 
 |      Inter      |  0/14   | 0/16  | 0  |
@@ -125,7 +125,7 @@
 |  Collection12  |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
 |  Collection13  |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
 |  Collection14  |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
-|     TOTAL      |    14    |   15   | 13/14  | 14 | 1  |     -     |   -    |    -    |
+|     TOTAL      |    14    |   15   | 13/14  | 14 | 1  |   0.93    |   1    |  0.97   |
 
 
 - **DataStructureTest** - failed: 0, passed: 0, ignored: 0 of 6 tests.
