@@ -17,7 +17,7 @@
 | ~~Reflection~~  | ~~0/4~~ |   -   | -  |
 | ~~Sanitizers~~  | ~~0/6~~ |   -   | -  |
 |     Session     |   3/3   |  3/3  | 0  | 
-|  StrongUpdate   |   0/5   |  0/1  | 0  |
+|  StrongUpdate   |   1/5   |  1/1  | 4  |
 |    **TOTAL**    |  0/103  | 0/123 | 0  |
 
 - **Precision:** 0.0
@@ -182,7 +182,7 @@
 |     TOTAL      |    3     |   3    |  3/3   | 3  |  0  |     1     |   1    |    1    |
 
 
-- **StrongUpdateTest** - failed: 4, passed: 0, ignored: 0 of 5 tests.
+- **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 tests.
 
 |      Test      | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
@@ -191,4 +191,4 @@
 | StrongUpdate3  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
 | StrongUpdate4  |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
 | StrongUpdate5  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
-|     TOTAL      |    1     |   5    |  1/5   | 1  | 4  |     -     |   -    |    -    |
+|     TOTAL      |    1     |   5    |  1/5   | 1  | 4  |   0.20    |   1    |  0.33   |
