@@ -184,11 +184,11 @@
 
 - **StrongUpdateTest** - failed: 4, passed: 0, ignored: 0 of 5 tests.
 
-|      Test      | Expected | Actual | Status | TP  | FP | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
-| StrongUpdate1  |    0     |   1    |   ❌    |  0  | 1  |     -     |   -    |    -    |
-| StrongUpdate2  |    0     |   1    |   ❌    |  0  | 1  |     -     |   -    |    -    |
-| StrongUpdate3  |    0     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-| StrongUpdate4  |    1     |   1    |   ❌    |  0  | 1  |     -     |   -    |    -    |
-| StrongUpdate5  |    0     |   1    |   ❌    |  0  | 1  |     -     |   -    |    -    |
-|     TOTAL      |    1     |   0    |  1/5   |  0  | 4  |     -     |   -    |    -    |
+|      Test      | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
+| StrongUpdate1  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
+| StrongUpdate2  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
+| StrongUpdate3  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
+| StrongUpdate4  |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+| StrongUpdate5  |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
+|     TOTAL      |    1     |   5    |  1/5   | 1  | 4  |     -     |   -    |    -    |
