@@ -128,17 +128,17 @@
 |     TOTAL      |    14    |   15   | 13/14  | 14 | 1  |   0.93    |   1    |  0.97   |
 
 
-- **DataStructureTest** - failed: 1, passed: 0, ignored: 0 of 6 tests.
+- **DataStructureTest** - failed: 1, passed: 5, ignored: 0 of 6 tests.
 
-|      Test      | Expected | Actual | Status | TP  | FP | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:--:|:---------:|:------:|:-------:|
-| DataStructure1 |    1     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-| DataStructure2 |    1     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-| DataStructure3 |    1     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-| DataStructure4 |    0     |   1    |   ❌    |  0  | 1  |     -     |   -    |    -    |
-| DataStructure5 |    1     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-| DataStructure6 |    1     |   0    |   ✅    |  0  | 0  |     -     |   -    |    -    |
-|     TOTAL      |    5     |   0    |  5/6   |  0  | 1  |     -     |   -    |    -    |
+|      Test      | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
+| DataStructure1 |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+| DataStructure2 |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+| DataStructure3 |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+| DataStructure4 |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
+| DataStructure5 |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+| DataStructure6 |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
+|     TOTAL      |    5     |   6    |  5/6   | 5  | 1  |     -     |   -    |    -    |
 
 
 - **FactoryTest** - failed: 0, passed: 0, ignored: 0 of 3 tests.
