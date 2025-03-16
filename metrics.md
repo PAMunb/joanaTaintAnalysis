@@ -12,7 +12,7 @@
 |   Collection    |  13/14  | 14/14 | 1  |
 |  DataStructure  |   5/6   |  5/5  | 1  | 
 |     Factory     |   3/3   |  3/3  | 0  | 
-|      Inter      |  0/14   | 0/16  | 0  |
+|      Inter      |  11/14  | 13/16 | 0  |
 |    ~~Pred~~     | ~~0/9~~ |   -   | -  |
 | ~~Reflection~~  | ~~0/4~~ |   -   | -  |
 | ~~Sanitizers~~  | ~~0/6~~ |   -   | -  |
@@ -169,7 +169,7 @@
 |    Inter12     |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
 |    Inter13     |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
 |    Inter14     |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    16    |   13   | 11/14  | 13 |  0  |     -     |   -    |    -    |
+|     TOTAL      |    16    |   13   | 11/14  | 13 |  0  |     1     |  0.79  |  0.88   |
 
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 tests.
