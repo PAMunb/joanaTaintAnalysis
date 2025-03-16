@@ -16,7 +16,7 @@
 |    ~~Pred~~     | ~~0/9~~ |   -   | -  |
 | ~~Reflection~~  | ~~0/4~~ |   -   | -  |
 | ~~Sanitizers~~  | ~~0/6~~ |   -   | -  |
-|     Session     |   0/3   |  0/3  | 0  | 
+|     Session     |   3/3   |  3/3  | 0  | 
 |  StrongUpdate   |   0/5   |  0/1  | 0  |
 |    **TOTAL**    |  0/103  | 0/123 | 0  |
 
@@ -174,12 +174,12 @@
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 tests.
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score |
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|
-|    Session1    |    1     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-|    Session2    |    1     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-|    Session3    |    1     |   0    |   ✅    |  0  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    3     |   0    |  0/3   |  0  |  0  |     -     |   -    |    -    |
+|      Test      | Expected | Actual | Status | TP | FP  | Precision | Recall | F-score |
+|:--------------:|:--------:|:------:|:------:|:--:|:---:|:---------:|:------:|:-------:|
+|    Session1    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
+|    Session2    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
+|    Session3    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    3     |   3    |  3/3   | 3  |  0  |     1     |   1    |    1    |
 
 
 - **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 tests.
