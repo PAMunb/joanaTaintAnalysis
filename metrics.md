@@ -148,7 +148,7 @@
 |    Factory1    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
 |    Factory2    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
 |    Factory3    |    1     |   1    |   ✅    | 1  |  0  |     -     |   -    |    -    |
-|     TOTAL      |    3     |   3    |  3/3   | 3  |  0  |     -     |   -    |    -    |
+|     TOTAL      |    3     |   3    |  3/3   | 3  |  0  |     1     |   1    |    1    |
 
 
 - **InterTest** - failed: 3, passed: 11, ignored: 0 of 14 tests
