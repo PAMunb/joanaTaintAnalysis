@@ -20,9 +20,9 @@
 |  StrongUpdate   |   1/5   |  1/1   | 4  |
 |    **TOTAL**    | 72/103  | 91/123 | 15 |
 
-- **Precision:** 0.0
-- **Recall:** 0.0
-- **F-score:** 0.0
+- **Precision:** 0.86
+- **Recall:** 0.74
+- **F-score:** 0.79
 - **Pass Rate:** 69.90%
 
 ### DETAILS
