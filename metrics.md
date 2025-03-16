@@ -4,26 +4,26 @@
 
 > failed: 0, passed: 0, ignored: 0 of 103 tests.
 
-|      Test       |    Σ    |  TP   | FP |
-|:---------------:|:-------:|:-----:|:--:|
-|    Aliasing     |   2/6   | 4/11  | 2  |
-|      Array      |  9/10   |  9/9  | 1  |
-|      Basic      |  25/42  | 39/61 | 6  |
-|   Collection    |  13/14  | 14/14 | 1  |
-|  DataStructure  |   5/6   |  5/5  | 1  | 
-|     Factory     |   3/3   |  3/3  | 0  | 
-|      Inter      |  11/14  | 13/16 | 0  |
-|    ~~Pred~~     | ~~0/9~~ |   -   | -  |
-| ~~Reflection~~  | ~~0/4~~ |   -   | -  |
-| ~~Sanitizers~~  | ~~0/6~~ |   -   | -  |
-|     Session     |   3/3   |  3/3  | 0  | 
-|  StrongUpdate   |   1/5   |  1/1  | 4  |
-|    **TOTAL**    |  0/103  | 0/123 | 0  |
+|      Test       |    Σ    |   TP   | FP |
+|:---------------:|:-------:|:------:|:--:|
+|    Aliasing     |   2/6   |  4/11  | 2  |
+|      Array      |  9/10   |  9/9   | 1  |
+|      Basic      |  25/42  | 39/61  | 6  |
+|   Collection    |  13/14  | 14/14  | 1  |
+|  DataStructure  |   5/6   |  5/5   | 1  | 
+|     Factory     |   3/3   |  3/3   | 0  | 
+|      Inter      |  11/14  | 13/16  | 0  |
+|    ~~Pred~~     | ~~0/9~~ |   -    | -  |
+| ~~Reflection~~  | ~~0/4~~ |   -    | -  |
+| ~~Sanitizers~~  | ~~0/6~~ |   -    | -  |
+|     Session     |   3/3   |  3/3   | 0  | 
+|  StrongUpdate   |   1/5   |  1/1   | 4  |
+|    **TOTAL**    | 72/103  | 91/123 | 15 |
 
 - **Precision:** 0.0
 - **Recall:** 0.0
 - **F-score:** 0.0
-- **Pass Rate:** 0.0%
+- **Pass Rate:** 69.90%
 
 ### DETAILS
 
