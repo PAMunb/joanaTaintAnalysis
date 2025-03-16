@@ -29,17 +29,17 @@
 
 - ✅ : PASSED; ❌ : FAIL
 
-- **AliasingTest** - failed: 4, passed: 0, ignored: 0 of 6 test.
+- **AliasingTest** - failed: 4, passed: 2, ignored: 0 of 6 test.
 
 |      Test      | Expected | Actual | Status | TP | FP | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:--:|:--:|:---------:|:------:|:-------:|
-|   Aliasing1    |    1     |   0    |   ✅    | 0  | 0  |     -     |   -    |    -    |
+|   Aliasing1    |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
 |   Aliasing2    |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
 |   Aliasing3    |    0     |   1    |   ❌    | 0  | 1  |     -     |   -    |    -    |
 |   Aliasing4    |    2     |   1    |   ❌    | 1  | 0  |     -     |   -    |    -    |
-|   Aliasing5    |    1     |   0    |   ✅    | 0  | 0  |     -     |   -    |    -    |
+|   Aliasing5    |    1     |   1    |   ✅    | 1  | 0  |     -     |   -    |    -    |
 |   Aliasing6    |    7     |   1    |   ❌    | 1  | 0  |     -     |   -    |    -    |
-|     TOTAL      |    11    |   0    |  2/6   | 0  | 2  |     -     |   -    |    -    |
+|     TOTAL      |    11    |   6    |  2/6   | 4  | 2  |     -     |   -    |    -    |
 
 - **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test.
 
