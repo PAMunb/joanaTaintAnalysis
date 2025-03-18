@@ -31,16 +31,16 @@
 
 |     Test      | Expected | Passed | Failed | Pass Rate |
 |:-------------:|:--------:|:------:|:------:|:---------:|
-|   Aliasing    |    6     |   0    |   0    |    0%     |    
-|     Array     |    10    |   0    |   0    |    0%     |   
-|     Basic     |    42    |   0    |   0    |    0%     |      
-|  Collection   |    14    |   0    |   0    |    0%     |   
-| DataStructure |    6     |   0    |   0    |    0%     |    
-|    Factory    |    3     |   0    |   0    |    0%     |    
-|     Inter     |    14    |   0    |   0    |    0%     |     
-|    Session    |    3     |   0    |   0    |    0%     |      
-| StrongUpdate  |    5     |   0    |   0    |    0%     |       
-|   **TOTAL**   |   103    |   0    |   0    |    0%     |
+|   Aliasing    |    6     |   2    |   4    |  33.33%   |    
+|     Array     |    10    |   9    |   1    |    90%    |   
+|     Basic     |    42    |   25   |   17   |  59.52%   |      
+|  Collection   |    14    |   13   |   1    |  92.86%   |   
+| DataStructure |    6     |   5    |   1    |  83.33%   |    
+|    Factory    |    3     |   3    |   0    |   100%    |    
+|     Inter     |    14    |   11   |   3    |  78.57%   |     
+|    Session    |    3     |   3    |   0    |   100%    |      
+| StrongUpdate  |    5     |   1    |   4    |    20%    |       
+|   **TOTAL**   |   103    |   72   |   31   |  69.90%   |
 
 > Metrics for Precision, Recall and F-score.
 
@@ -204,7 +204,7 @@
 |     TOTAL      |    16    |   13   | 11/14  | 13 |  0  |     1     |  0.79  |  0.88   |
 
 
-- **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 tests.
+- **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 tests.
 
 |      Test      | Expected | Actual | Status | TP | FP  | Precision | Recall | F-score |
 |:--------------:|:--------:|:------:|:------:|:--:|:---:|:---------:|:------:|:-------:|
