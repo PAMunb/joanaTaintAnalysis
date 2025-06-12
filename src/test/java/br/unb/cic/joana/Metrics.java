@@ -4,10 +4,10 @@ public class Metrics {
 
     private static Metrics instance;
 
-    private double truePositives;
-    private double falsePositives;
+    public double truePositives;
+    public double falsePositives;
 
-    private double falseNegatives;
+    public double falseNegatives;
 
     private Metrics() {
         this.truePositives = 0.0;
