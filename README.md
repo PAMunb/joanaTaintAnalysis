@@ -24,6 +24,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.InterTestSuite"`
    * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.SessionTestSuite"`
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.StrongUpdateTestSuite"`
+   * All test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.AllTestSuite"`
    
 <!-- ### Executing the micro securibench
 
@@ -40,123 +41,59 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.StrongUpdateTestSuite"` -->
 
 
-###### failed: 27, passed: 76, ignored: 0 of 103 test (73.78%)
+###### failed: 31, passed: 72, ignored: 0 of 103 test (69.90%)
 
-|     Test      |   TP    | FP  | 
-|:-------------:|:-------:|:---:|
-|   Aliasing    |  6/12   |  0  |   
-|     Array     |   9/9   |  4  |   
-|     Basic     |  58/60  |  1  |  
-|  Collection   |  14/14  |  0  | 
-| DataStructure |   5/5   |  1  |  
-|    Factory    |   3/3   |  1  |  
-|     Inter     |  14/16  |  0  |  
-|    Session    |   3/3   |  0  |  
-| StrongUpdate  |   0/0   |  2  |   
-|   **TOTAL**   | 117/121 |  9  |   
+|     Test      |   TP    | FP  | FN  | 
+|:-------------:|:-------:|:---:|:---:|
+|   Aliasing    |   0/0   |  0  |  0  |   
+|     Array     |   0/0   |  0  |  0  |   
+|     Basic     |   0/0   |  0  |  0  |  
+|  Collection   |   0/0   |  0  |  0  | 
+| DataStructure |   0/0   |  0  |  0  |  
+|    Factory    |   0/0   |  0  |  0  |  
+|     Inter     |   0/0   |  0  |  0  |  
+|    Session    |   0/0   |  0  |  0  |  
+| StrongUpdate  |   0/0   |  0  |  0  |   
+|   **TOTAL**   |   0/0   |  0  |  0  |   
 
-- **Precision:** 0.93
-- **Recall:** 0.97
-- **F-score:** 0.95
+- **Violations:** 123/138
+- **Precision:** 0.82
+- **Recall:** 0.72
+- **F-score:** 0.76
+
 
 #### Detailed information
 
-<!-- - **AliasingTest** - failed: 2, passed: 4, ignored: 0 of 6 test 
-   - *Fails :*
-      - [4] 
-      - [6] *related to issue(i)*
-   - *Violations :* `6/12`
-   - *Precision :* `100%` 
-   - *Recall :* `36%`
-   - *fScore :* `53%` -->
-
-<!-- TO-DO: The amount of expected differs a bit from the computation in JSVFA project -->
-- **AliasingTest** - failed: 0, passed: 4, ignored: 2 of 6 tests. `(66.67%)`
+- **AliasingTest** - failed: 0, passed: 2, ignored: 4 of 6 tests. `(66.67%)`
 
 
-|      Test      | Expected | Actual | Status | TP  | FP  | Precision | Recall | F-score | Comments|
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---------:|:------:|:-------:|:-------:|
-|   Aliasing1    |    1     |   1    |   ✅   |  1  |  0  |     -     |   -    |    -    |    -    |
-|   Aliasing2    |    0     |   0    |   ✅   |  0  |  0  |     -     |   -    |    -    |    -    |
-|   Aliasing3    |    0     |   0    |   ✅   |  0  |  0  |     -     |   -    |    -    |    -    |
-|   Aliasing4    |    2     |   1    |   ❌   |  1  |  0  |     -     |   -    |    -    |    *related to issue(i)*    |
-|   Aliasing5    |    1     |   1    |   ✅   |  1  |  0  |     -     |   -    |    -    |    -    |
-|   Aliasing6    |    7     |   1    |   ❌   |  1  |  0  |     -     |   -    |    -    |    *related to issue(i)*    |
-|     TOTAL      |    11    |   4    |  4/6   |  4  |  0  |           |        |         |         |
+|      Test      | Expected | Actual | Status | TP  | FP  | FN  | Precision | Recall | F-score | Comments|
+|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---:|:---------:|:------:|:-------:|:-------:|
+|   Aliasing1    |    1     |   1    |   ✅   |  1  |  0  |  0  |-          |   -    |    -    |    -    |
+|   Aliasing2    |    0     |   1    |   ❌   |  0  |  1  |  0  |-          |   -    |    -    |    -    |
+|   Aliasing3    |    0     |   1    |   ❌   |  0  |  1  |  0  |-          |   -    |    -    |    -    |
+|   Aliasing4    |    2     |   1    |   ❌   |  0  |  0  |  1  |-          |   -    |    -    |    -    |
+|   Aliasing5    |    1     |   1    |   ✅   |  1  |  0  |  0  |-          |   -    |    -    |    -    |
+|   Aliasing6    |    7     |   1    |   ❌   |  0  |  0  |  6  |-          |   -    |    -    |    -    |
+|     TOTAL      |    11    |   6    |  2/6   |  2  |  2  |  7  |           |        |         |    -    |
 
-- **ArraysTest** - failed: 1, passed: 9, ignored: 0 of 10 test `(90%)`
-   - *Fails :*
-      - [5] *related to issue(ii)*
-   - *Violations :* `10/9`
-   - *Precision :* `90%` 
-   - *Recall :* `100%`
-   - *fScore :* `95%`
+- *Violations :* `6/11`
+- *Precision :* `0%` 
+- *Recall :* `0%`
+- *fScore :* `0%`
 
-- **BasicTest** - failed: 17, passed: 25, ignored: 0 of 42 test `(59.52%)`
-   - *Fails :*
-      - [5]  *related to issue(i)*
-      - [11] *related to issue(i)*
-      - [12] *related to issue(i)*
-      - [13] Expecting 1 but found 0 vulnerabilities.
-      - [14] Expecting 1 but found 0 vulnerabilities.
-      <!-- - [16] --it is throwing an error while is analyzed -->
-      - [19] --method java.sql.Connection.prepareStatement is not recognized as a sink
-      - [20] --method java.sql.Statement.execute is not recognized as a sink
-      - [21] --method java.sql.Statement.executeUpdate is not recognized as a sink
-      - [23] *related to issue(i)*
-      - [28] *related to issue(i)*
-      - [29] *related to issue(i)*
-      - [31] *related to issue(i)*
-      - [33] Expecting 1 but found 0 vulnerabilities.
-      - [35] *related to issue(iii)*
-      - [40] *flaky*
-      - [42] *related to issue(iii)*
-   - *Violations :* `45/61`
-   - *Precision :* `81%` 
-   - *Recall :* `54%`
-   - *fScore :* `65%`
-  
-- **CollectionTest** - failed: 0, passed: 14, ignored: 0 of 14 test `(100%)`
-   - *Violations :* `15/15`
+- **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test `(0%)`
 
-- **DataStructureTest** - failed: 0, passed: 6, ignored: 0 of 6 test `(100%)`
-   - *Violations :* `6/6`
+- **BasicTest** - failed: 0, passed: 0, ignored: 0 of  test `(59.52%)`
 
-- **FactoryTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
-   - *Violations :* `3/3`
+- **CollectionTest** - failed: 0, passed: 0, ignored: 0 of 14 test `(100%)`
 
-- **InterTest** - failed: 3, passed: 11, ignored: 0 of 14 test `(85.71%)`
-   - *Fails :*
-      - [2] *related to issue(i)*
-      - [6]
-      - [9] *related to issue(i)*
-   - *Violations :* `13/16`
-   - *Precision :* `100%` 
-   - *Recall :* `79%`
-   - *fScore :* `88%`
+- **DataStructureTest** - failed: 0, passed: 0, ignored: 0 of 6 test `(100%)`
 
-- **SessionTest** - failed: 0, passed: 3, ignored: 0 of 3 test `(100%)`
-   - *Violations :* `3/3`
+- **FactoryTest** - failed: 0, passed: 0, ignored: 0 of  3 test `(100%)`
 
-- **StrongUpdateTest** - failed: 4, passed: 1, ignored: 0 of 5 test `(20%)`
-   - *Fails :*
-      - [1] *related to issue(ii)*
-      - [2] *related to issue(ii)*
-      - [3] *related to issue(ii)*
-      - [5] *related to issue(ii)*
-   - *Violations :* `5/1`
-   - *Precision :* `20%` 
-   - *Recall :* `100%`
-   - *fScore :* `33%`
+- **InterTest** - failed: 0, passed: 0, ignored: 0 of  14 test `(85.71%)`
 
-## ISSUES
-- (i) When there are similar sink statements in a program, the solution recognize just the first one;
-- (ii) The solution does not handle *Strong Update*;
-- (iii) As sources/sinks are shared in a common file, the solution will look for all of them and not just the ones for the especific test.
+- **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 test `(0%)`
 
-
-java.lang.IllegalStateException: 
-could not resolve 
-< Application, Lsecuribench/v2/micro/aliasing/Aliasing3, 
-doGet(Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V 
->
+- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)`
