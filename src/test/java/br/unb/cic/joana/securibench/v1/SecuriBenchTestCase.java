@@ -36,6 +36,8 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
 
         int totalOfExpectedVulnerabilities = 0;
         int totalOfVulnerabilitiesFound = 0;
+        int totalOfTest = 0;
+        int totalOfTestHasPassed = 0;
         List<String> report = new ArrayList<>();
 
         boolean failure = false;
@@ -64,6 +66,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             if (expected == found) {
                 report.add(String.format(" - %s (ok)", c.getName()));
                 m.reportTruePositives(expected);
+                totalOfTestHasPassed +=1;
             }
             else {
                 report.add(String.format("- %s error. Expecting %d but found %d vulnerabilities.", c.getName(), expected, found));
@@ -77,6 +80,8 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             }
             totalOfExpectedVulnerabilities += expected;
             totalOfVulnerabilitiesFound += found;
+
+            totalOfTest += 1;
         }
 
         Collections.sort(report);
@@ -97,6 +102,43 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
         if (failure) {
             System.err.println("We found errors in the Joana execution or configuration.");
         }
+
+        System.out.println(
+            String.format(
+                "failed: = %d, passed: = %d of = %d tests.",
+                (totalOfTest - totalOfTestHasPassed),
+                totalOfTestHasPassed,
+                totalOfTest
+                )
+            );
+
+        System.out.println(
+            String.format(
+                "Pass Rate: = %.2f",
+                (((totalOfTestHasPassed * 1.0) / (totalOfTest * 1.0)) * 100)
+                )
+            );
+
+        System.out.println(
+            String.format(
+                "TP = %.2f",
+                m.truePositives
+                )
+            );
+
+        System.out.println(
+            String.format(
+                "FP = %.2f",
+                m.falsePositives
+                )
+            );
+
+        System.out.println(
+            String.format(
+                "FN = %.2f",
+                m.falseNegatives
+                )
+            );
     }
 
 }
