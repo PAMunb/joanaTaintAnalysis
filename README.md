@@ -45,7 +45,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 |     Test      |   TP    | FP  | FN  | 
 |:-------------:|:-------:|:---:|:---:|
-|   Aliasing    |   0/0   |  0  |  0  |   
+|   Aliasing    |   2/11  |  2  |  7  |   
 |     Array     |   0/0   |  0  |  0  |   
 |     Basic     |   0/0   |  0  |  0  |  
 |  Collection   |   0/0   |  0  |  0  | 
@@ -64,7 +64,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 #### Detailed information
 
-- **AliasingTest** - failed: 0, passed: 2, ignored: 4 of 6 tests. `(66.67%)`
+- **AliasingTest** - failed: 4, passed: 2 of 6 tests. `(33.33%)`
 
 
 |      Test      | Expected | Actual | Status | TP  | FP  | FN  | Precision | Recall | F-score | Comments|
@@ -77,12 +77,13 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 |   Aliasing6    |    7     |   1    |   ❌   |  0  |  0  |  6  |-          |   -    |    -    |    -    |
 |     TOTAL      |    11    |   6    |  2/6   |  2  |  2  |  7  |           |        |         |    -    |
 
-- *Violations :* `6/11`
-- *Precision :* `0%` 
-- *Recall :* `0%`
-- *fScore :* `0%`
+- **Violations:** `6/11`
+- **Precision:** `50%` 
+- **Recall:** `22%`
+- **fScore:** `31%`
+- **Pass Rate:** `33.33%`
 
-- **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test `(0%)`
+<!-- - **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test `(0%)`
 
 - **BasicTest** - failed: 0, passed: 0, ignored: 0 of  test `(59.52%)`
 
@@ -96,4 +97,4 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 test `(0%)`
 
-- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)`
+- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)` -->
