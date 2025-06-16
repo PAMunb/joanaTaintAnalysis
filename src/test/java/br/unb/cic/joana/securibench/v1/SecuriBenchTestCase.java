@@ -36,8 +36,6 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
 
         int totalOfExpectedVulnerabilities = 0;
         int totalOfVulnerabilitiesFound = 0;
-        int totalOfTest = 0;
-        int totalOfTestHasPassed = 0;
         List<String> report = new ArrayList<>();
 
         boolean failure = false;
@@ -66,7 +64,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             if (expected == found) {
                 report.add(String.format(" - %s (ok)", c.getName()));
                 m.reportTruePositives(expected);
-                totalOfTestHasPassed +=1;
+                m.reportPassedTest();
             }
             else {
                 report.add(String.format("- %s error. Expecting %d but found %d vulnerabilities.", c.getName(), expected, found));
@@ -77,11 +75,10 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
                 else {
                     m.reportFalsePositives(found - expected);
                 }
+                m.reportFailedTest();
             }
             totalOfExpectedVulnerabilities += expected;
             totalOfVulnerabilitiesFound += found;
-
-            totalOfTest += 1;
         }
 
         Collections.sort(report);
@@ -106,16 +103,16 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
         System.out.println(
             String.format(
                 "failed: = %d, passed: = %d of = %d tests.",
-                (totalOfTest - totalOfTestHasPassed),
-                totalOfTestHasPassed,
-                totalOfTest
+                m.failedTests,
+                m.passedTests,
+                (m.passedTests + m.failedTests)
                 )
             );
 
         System.out.println(
             String.format(
                 "Pass Rate: = %.2f",
-                (((totalOfTestHasPassed * 1.0) / (totalOfTest * 1.0)) * 100)
+                m.passRate()
                 )
             );
 
