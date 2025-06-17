@@ -116,6 +116,13 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
                 m.falseNegatives
                 )
             );
+
+        System.out.println(
+            String.format(
+                "TN = %.2f",
+                m.trueNegatives
+                )
+            );
     }
 
 }
