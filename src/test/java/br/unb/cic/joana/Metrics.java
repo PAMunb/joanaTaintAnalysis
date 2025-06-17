@@ -9,6 +9,8 @@ public class Metrics {
     public double falseNegatives;
     public int passedTests;
     public int failedTests;
+    public int expected;
+    public int found;
 
     private Metrics() {
         this.truePositives = 0.0;
@@ -44,7 +46,19 @@ public class Metrics {
         this.failedTests += 1;
     }
 
+    public void reportExpected(int expected) {
+        this.expected += expected;
+    }
+
+    public void reportFound(int found) {
+        this.found += found;
+    }
+
     public void compute(int expected, int found) {
+
+        this.reportExpected(expected);
+        this.reportFound(found);
+
         if (expected == found) {
             this.reportPassedTest();
             this.reportTruePositives(expected);
@@ -53,6 +67,7 @@ public class Metrics {
         
         this.reportFailedTest();
         
+
         if(expected > found) {
             this.reportFalseNegatives(expected - found);
             return;
@@ -75,5 +90,13 @@ public class Metrics {
 
     public double passRate() {
         return (((this.passedTests * 1.0) / (this.passedTests + this.failedTests * 1.0)) * 100);
+    }
+
+    public int vulnerabilities() {
+        return this.expected;
+    }
+
+    public int vulnerabilitiesFound() {
+        return this.found;
     }
 }
