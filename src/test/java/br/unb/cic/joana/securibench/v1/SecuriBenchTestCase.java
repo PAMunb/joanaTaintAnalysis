@@ -33,9 +33,6 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
     @Test
     public final void testSuite() throws Exception {
         Set<Class<? extends MicroTestCase>> classes = findClassesInBasePackage();
-
-        int totalOfExpectedVulnerabilities = 0;
-        int totalOfVulnerabilitiesFound = 0;
         List<String> report = new ArrayList<>();
 
         boolean failure = false;
@@ -61,24 +58,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
                 failure = true;
             }
 
-            if (expected == found) {
-                report.add(String.format(" - %s (ok)", c.getName()));
-                m.reportTruePositives(expected);
-                m.reportPassedTest();
-            }
-            else {
-                report.add(String.format("- %s error. Expecting %d but found %d vulnerabilities.", c.getName(), expected, found));
-
-                if(expected > found) {
-                    m.reportFalseNegatives(expected - found);
-                }
-                else {
-                    m.reportFalsePositives(found - expected);
-                }
-                m.reportFailedTest();
-            }
-            totalOfExpectedVulnerabilities += expected;
-            totalOfVulnerabilitiesFound += found;
+            m.compute(expected, found);
         }
 
         Collections.sort(report);
@@ -86,12 +66,12 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             System.out.println(s);
         }
 
-        if (totalOfExpectedVulnerabilities == totalOfVulnerabilitiesFound) {
-            System.err.println(String.format("Found %d warnings.", totalOfVulnerabilitiesFound));
+        if (m.vulnerabilitiesFound() == m.vulnerabilities()) {
+            System.err.println(String.format("Found %d warnings.", m.vulnerabilitiesFound()));
             Assert.assertTrue(true);
         }
         else {
-            System.err.println(String.format("Error. Expecting %d but found %d warnings.", totalOfExpectedVulnerabilities, totalOfVulnerabilitiesFound));
+            System.err.println(String.format("Error. Expecting %d but found %d warnings.", m.vulnerabilities(), m.vulnerabilitiesFound()));
         }
 
         System.out.println(String.format("precision = %.2f recall = %.2f fScore = %.2f", m.precision(), m.recall(), m.f1Score()));
