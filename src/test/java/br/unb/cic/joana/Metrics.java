@@ -44,6 +44,23 @@ public class Metrics {
         this.failedTests += 1;
     }
 
+    public void compute(int expected, int found) {
+        if (expected == found) {
+            this.reportPassedTest();
+            this.reportTruePositives(expected);
+            return;
+        }
+        
+        this.reportFailedTest();
+        
+        if(expected > found) {
+            this.reportFalseNegatives(expected - found);
+            return;
+        }
+        
+        this.reportFalsePositives(found - expected);        
+    }
+
     public double precision() {
         return this.truePositives / (this.truePositives + this.falsePositives);
     }
