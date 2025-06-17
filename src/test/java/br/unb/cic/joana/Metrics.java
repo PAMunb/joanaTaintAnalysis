@@ -7,6 +7,7 @@ public class Metrics {
     public double truePositives;
     public double falsePositives;
     public double falseNegatives;
+    public double trueNegatives;
     public int passedTests;
     public int failedTests;
     public int expected;
@@ -16,8 +17,11 @@ public class Metrics {
         this.truePositives = 0.0;
         this.falsePositives = 0.0;
         this.falseNegatives = 0.0;
+        this.trueNegatives = 0.0;
         this.passedTests = 0;
         this.failedTests = 0;
+        this.expected = 0;
+        this.found = 0;
     }
 
     public static Metrics getInstance() {
@@ -36,6 +40,10 @@ public class Metrics {
 
     public void reportFalseNegatives(int falseNegatives) {
         this.falseNegatives += falseNegatives;
+    }
+
+    public void reportTrueNegatives() {
+        this.trueNegatives += 1;
     }
 
     public void reportPassedTest() {
@@ -61,6 +69,12 @@ public class Metrics {
 
         if (expected == found) {
             this.reportPassedTest();
+
+            if (expected == 0) {
+                this.reportTrueNegatives();
+                return;
+            }
+            
             this.reportTruePositives(expected);
             return;
         }
