@@ -66,63 +66,15 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             System.out.println(s);
         }
 
-        if (m.vulnerabilitiesFound() == m.vulnerabilities()) {
-            System.err.println(String.format("Found %d warnings.", m.vulnerabilitiesFound()));
-            Assert.assertTrue(true);
-        }
-        else {
-            System.err.println(String.format("Error. Expecting %d but found %d warnings.", m.vulnerabilities(), m.vulnerabilitiesFound()));
-        }
-
-        System.out.println(String.format("precision = %.2f recall = %.2f fScore = %.2f", m.precision(), m.recall(), m.f1Score()));
-
         if (failure) {
             System.err.println("We found errors in the Joana execution or configuration.");
         }
 
-        System.out.println(
-            String.format(
-                "failed: = %d, passed: = %d of = %d tests.",
-                m.failedTests,
-                m.passedTests,
-                (m.passedTests + m.failedTests)
-                )
-            );
+        if (m.vulnerabilitiesFound() == m.vulnerabilities()) {
+            Assert.assertTrue(true);
+        }
 
-        System.out.println(
-            String.format(
-                "Pass Rate: = %.2f",
-                m.passRate()
-                )
-            );
-
-        System.out.println(
-            String.format(
-                "TP = %.2f",
-                m.truePositives
-                )
-            );
-
-        System.out.println(
-            String.format(
-                "FP = %.2f",
-                m.falsePositives
-                )
-            );
-
-        System.out.println(
-            String.format(
-                "FN = %.2f",
-                m.falseNegatives
-                )
-            );
-
-        System.out.println(
-            String.format(
-                "TN = %.2f",
-                m.trueNegatives
-                )
-            );
+        m.report();
     }
 
 }
