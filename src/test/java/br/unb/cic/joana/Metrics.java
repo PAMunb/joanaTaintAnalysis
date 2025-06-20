@@ -113,4 +113,50 @@ public class Metrics {
     public int vulnerabilitiesFound() {
         return this.found;
     }
+
+    public void report() {
+
+        System.out.println(
+            String.format(
+                "failed = %d, passed = %d of = %d tests.",
+                this.failedTests,
+                this.passedTests,
+                (this.passedTests + this.failedTests)
+            )
+        );
+
+        System.out.println(
+            String.format(
+                "Pass Rate: = %.2f",
+                this.passRate()
+            )
+        );
+
+        System.err.println(
+            String.format(
+                "Expecting %d of %d warnings.", 
+                this.vulnerabilities(), 
+                this.vulnerabilitiesFound()
+            )
+        );
+
+        System.out.println(
+            String.format(
+                "TP = %.2f FP = %.2f FN = %.2f TN = %.2f",
+                this.truePositives,
+                this.falsePositives,
+                this.falseNegatives,
+                this.trueNegatives
+            )
+        );
+
+        System.out.println(
+            String.format(
+                "Precision = %.2f Recall = %.2f F-score = %.2f", 
+                this.precision(), 
+                this.recall(), 
+                this.f1Score()
+            )
+        );
+    }
 }
