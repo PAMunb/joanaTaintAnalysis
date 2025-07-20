@@ -64,24 +64,18 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 #### Detailed information
 
-- **AliasingTest** - failed: 4, passed: 2 of 6 tests. `(33.33%)`
+- **AliasingTest** - ❌ed: 4, ✅ed: 2 of 6 tests. `(33.33%)`
 
+| Test      | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|-----------|-------|----------|--------|----|----|----|-----------|--------|------|
+| Aliasing6 | 1     | 7        | ❌      | 0  | 0  | 6  | 0.00      | 0.00   | 0.00 |
+| Aliasing4 | 1     | 2        | ❌      | 0  | 0  | 1  | 0.00      | 0.00   | 0.00 |
+| Aliasing5 | 1     | 1        | ✅      | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Aliasing2 | 1     | 0        | ❌      | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| Aliasing3 | 1     | 0        | ❌      | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| Aliasing1 | 1     | 1        | ✅      | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL     | 6     | 11       | 2/6    | 2  | 2  | 7  | 0.50      | 0.22   | 0.31 |
 
-|      Test      | Expected | Actual | Status | TP  | FP  | FN  | Precision | Recall | F-score | Comments|
-|:--------------:|:--------:|:------:|:------:|:---:|:---:|:---:|:---------:|:------:|:-------:|:-------:|
-|   Aliasing1    |    1     |   1    |   ✅   |  1  |  0  |  0  |-          |   -    |    -    |    -    |
-|   Aliasing2    |    0     |   1    |   ❌   |  0  |  1  |  0  |-          |   -    |    -    |    -    |
-|   Aliasing3    |    0     |   1    |   ❌   |  0  |  1  |  0  |-          |   -    |    -    |    -    |
-|   Aliasing4    |    2     |   1    |   ❌   |  0  |  0  |  1  |-          |   -    |    -    |    -    |
-|   Aliasing5    |    1     |   1    |   ✅   |  1  |  0  |  0  |-          |   -    |    -    |    -    |
-|   Aliasing6    |    7     |   1    |   ❌   |  0  |  0  |  6  |-          |   -    |    -    |    -    |
-|     TOTAL      |    11    |   6    |  2/6   |  2  |  2  |  7  |           |        |         |    -    |
-
-- **Violations:** `6/11`
-- **Precision:** `50%` 
-- **Recall:** `22%`
-- **fScore:** `31%`
-- **Pass Rate:** `33.33%`
 
 <!-- - **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test `(0%)`
 
