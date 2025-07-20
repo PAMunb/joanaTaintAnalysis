@@ -216,4 +216,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Session1 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 | TOTAL    | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 
-- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)`
+
+- **StrongUpdateTest** - failed: 4, passed: 1 of 5 tests. `(20.00%)`
+
+| Test           | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|----------------|-------|----------|--------|----|----|----|-----------|--------|------|
+| StrongUpdates2 | 1     | 0        | FAIL   | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| StrongUpdates1 | 1     | 0        | FAIL   | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| StrongUpdates4 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| StrongUpdates3 | 1     | 0        | FAIL   | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| StrongUpdates5 | 1     | 0        | FAIL   | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| TOTAL          | 5     | 1        | 1/5    | 1  | 4  | 0  | 0.20      | 1.00   | 0.33 |
