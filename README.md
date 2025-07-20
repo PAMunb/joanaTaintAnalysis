@@ -185,7 +185,26 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Factories3 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 | TOTAL      | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 
-- **InterTest** - failed: 0, passed: 0, ignored: 0 of  14 test `(85.71%)`
+
+- **InterTest** - failed: 3, passed: 11 of 14 tests. `(78.57%)`
+
+| Test    | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|---------|-------|----------|--------|----|----|----|-----------|--------|------|
+| Inter11 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter12 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter10 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter8  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter9  | 1     | 2        | FAIL   | 0  | 0  | 1  | 0.00      | 0.00   | 0.00 |
+| Inter13 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter6  | 0     | 1        | FAIL   | 0  | 0  | 1  | 0.00      | 0.00   | 0.00 |
+| Inter14 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter7  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter1  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter4  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter5  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Inter2  | 1     | 2        | FAIL   | 0  | 0  | 1  | 0.00      | 0.00   | 0.00 |
+| Inter3  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL   | 13    | 16       | 11/14  | 11 | 0  | 3  | 1.00      | 0.79   | 0.88 |
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 test `(0%)`
 
