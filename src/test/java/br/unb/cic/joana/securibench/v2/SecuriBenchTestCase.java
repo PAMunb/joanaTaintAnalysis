@@ -34,69 +34,60 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
     public final void testSuite() throws Exception {
         Set<Class<? extends MicroTestCase>> classes = findClassesInBasePackage();
 
-        int totalOfExpectedVulnerabilities = 0;
-        int totalOfVulnerabilitiesFound = 0;
         List<String> report = new ArrayList<>();
-
         boolean failure = false;
 
-        Metrics m = Metrics.getInstance();
+        br.unb.cic.joana.MetricsManager metricsManager = new br.unb.cic.joana.MetricsManager();
 
-        for (Class c: classes) {
+        for (Class c : classes) {
             Object instance = c.newInstance();
 
-            if (! (instance instanceof MicroTestCase)) {
+            if (!(instance instanceof MicroTestCase)) {
                 throw new RuntimeException("Could not instantiate " + c.getName() + " as a MicroTestCase");
             }
 
             MicroTestCase microTestCase = (MicroTestCase) instance;
             int expected = microTestCase.getVulnerabilityCount();
             int found = 0;
-            
+            String testName = c.getName();
+
             try {
-                setUpConfiguration(c.getName() + "." + entryPointMethod());
+                setUpConfiguration(testName + "." + entryPointMethod());
                 found = driver.execute().size();
-            } catch(Throwable e) {
-                report.add(String.format("- %s failure to execute. Error = %s", c.getName(), e));
+            } catch (Throwable e) {
+                report.add(String.format("- %s failure to execute. Error = %s", testName, e));
                 failure = true;
             }
 
-            if (expected == found) {
-                report.add(String.format(" - %s (ok)", c.getName()));
-                m.reportTruePositives(expected);
-            }
-            else {
-                report.add(String.format("- %s error. Expecting %d but found %d vulnerabilities.", c.getName(), expected, found));
+            metricsManager.compute(testName, expected, found);
 
-                if(expected > found) {
-                    m.reportFalseNegatives(expected - found);
-                }
-                else {
-                    m.reportFalsePositives(found - expected);
-                }
+            if (expected == found) {
+                report.add(String.format(" - %s (ok)", testName));
+            } else {
+                report.add(String.format("- %s error. Expecting %d but found %d vulnerabilities.", testName, expected, found));
             }
-            totalOfExpectedVulnerabilities += expected;
-            totalOfVulnerabilitiesFound += found;
         }
 
         Collections.sort(report);
-        for(String s: report) {
+        for (String s : report) {
             System.out.println(s);
         }
 
-        if (totalOfExpectedVulnerabilities == totalOfVulnerabilitiesFound) {
-            System.err.println(String.format("Found %d warnings.", totalOfVulnerabilitiesFound));
+        if (metricsManager.vulnerabilities() == metricsManager.vulnerabilitiesFound()) {
+            System.err.println(String.format("Found %d warnings.", metricsManager.vulnerabilitiesFound()));
             Assert.assertTrue(true);
-        }
-        else {
-            System.err.println(String.format("Error. Expecting %d but found %d warnings.", totalOfExpectedVulnerabilities, totalOfVulnerabilitiesFound));
+        } else {
+            System.err.println(String.format("Error. Expecting %d but found %d warnings.", metricsManager.vulnerabilities(), metricsManager.vulnerabilitiesFound()));
         }
 
-        System.out.println(String.format("precision = %.2f recall = %.2f fScore = %.2f", m.precision(), m.recall(), m.f1Score()));
+        System.out.println(String.format("precision = %.2f recall = %.2f fScore = %.2f",
+                metricsManager.precision(), metricsManager.recall(), metricsManager.f1Score()));
 
         if (failure) {
             System.err.println("We found errors in the Joana execution or configuration.");
         }
+
+        metricsManager.reportSummary();
     }
 
 }

@@ -2,6 +2,7 @@ package br.unb.cic.joana.securibench.v1;
 
 import br.unb.cic.joana.JoanaTestCase;
 import br.unb.cic.joana.Metrics;
+import br.unb.cic.joana.MetricsManager;
 import org.junit.Assert;
 import org.junit.Test;
 import org.reflections.Reflections;
@@ -37,7 +38,7 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
 
         boolean failure = false;
 
-        Metrics m = Metrics.getInstance();
+        MetricsManager metricsManager = new MetricsManager();
 
         for (Class c: classes) {
             Object instance = c.newInstance();
@@ -49,16 +50,16 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             MicroTestCase microTestCase = (MicroTestCase) instance;
             int expected = microTestCase.getVulnerabilityCount();
             int found = 0;
-            
+            String testName = c.getName();
             try {
-                setUpConfiguration(c.getName() + "." + entryPointMethod());
+                setUpConfiguration(testName + "." + entryPointMethod());
                 found = driver.execute().size();
             } catch(Throwable e) {
                 report.add(String.format("- %s failure to execute. Error = %s", c.getName(), e));
                 failure = true;
             }
 
-            m.compute(expected, found);
+            metricsManager.compute(testName, expected, found);
         }
 
         Collections.sort(report);
@@ -70,11 +71,11 @@ public abstract class SecuriBenchTestCase extends JoanaTestCase {
             System.err.println("We found errors in the Joana execution or configuration.");
         }
 
-        if (m.vulnerabilitiesFound() == m.vulnerabilities()) {
+        if (metricsManager.vulnerabilitiesFound() == metricsManager.vulnerabilities()) {
             Assert.assertTrue(true);
         }
 
-        m.report();
+        metricsManager.reportSummary();
     }
 
 }
