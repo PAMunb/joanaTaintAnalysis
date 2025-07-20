@@ -2,6 +2,9 @@ package br.unb.cic.joana;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class MetricsManager {
     private final Map<String, Metrics> metricsByTest = new HashMap<>();
@@ -184,7 +187,10 @@ public class MetricsManager {
         System.out.println("| Test | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1 |");
         System.out.println("|------|-------|----------|--------|----|----|----|-----------|--------|----|");
 
-        for (Map.Entry<String, Metrics> entry : metricsByTest.entrySet()) {
+        List<Map.Entry<String, Metrics>> entries = new ArrayList<>(metricsByTest.entrySet());
+        Collections.sort(entries, (a, b) -> a.getKey().compareTo(b.getKey()));
+        
+        for (Map.Entry<String, Metrics> entry : entries) {
             String testName = entry.getKey().split("\\.")[entry.getKey().split("\\.").length - 1];
             Metrics m = entry.getValue();
             String status = (m.failedTests == 0) ? "PASS" : "FAIL";
