@@ -1,6 +1,6 @@
 ## Joana Taint Analysis
 
-A small benchmark for testin the Joana capabilities for taint analysis.
+A small benchmark for testing the Joana capabilities for taint analysis.
 
 ### Setup
 
