@@ -77,7 +77,21 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | TOTAL     | 6     | 11       | 2/6    | 2  | 2  | 7  | 0.50      | 0.22   | 0.31 |
 
 
-<!-- - **ArraysTest** - failed: 0, passed: 0, ignored: 0 of 10 test `(0%)`
+- **ArraysTest** - failed: 1, passed: 9 of 10 tests. `(90.00%)`
+
+| Test     | Found | Expected | Status  | TP  | FP  | FN  | Precision | Recall   | F1   |
+|----------|-------|----------|---------|-----|-----|-----|-----------|----------|------|
+| Arrays5  | 1     | 0        | FAIL    | 0   | 1   | 0   | 0.00      | 0.00     | 0.00 |
+| Arrays4  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays3  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays2  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays9  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays8  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays7  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays6  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays1  | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| Arrays10 | 1     | 1        | PASS    | 1   | 0   | 0   | 1.00      | 1.00     | 1.00 |
+| TOTAL    | 10    | 9        | 9/10    | 9   | 1   | 0   | 0.90      | 1.00     | 0.95 |
 
 - **BasicTest** - failed: 0, passed: 0, ignored: 0 of  test `(59.52%)`
 
@@ -91,4 +105,4 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 - **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 test `(0%)`
 
-- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)` -->
+- **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)`
