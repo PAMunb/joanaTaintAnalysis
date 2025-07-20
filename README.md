@@ -142,7 +142,25 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Basic41 | 0      | 1         | FAIL    | 0   | 0   | 1   | 0.00       | 0.00    | 0.00 |
 | TOTAL   | 45     | 61        | 25/42   | 26  | 6   | 22  | 0.81       | 0.54    | 0.65 |
 
-- **CollectionTest** - failed: 0, passed: 0, ignored: 0 of 14 test `(100%)`
+- **CollectionTest** - failed: 1, passed: 13 of 14 tests. `(92.86%)`
+
+| Test          | Found  | Expected  | Status  | TP  | FP  | FN | Precision | Recall | F1   |
+|---------------|--------|-----------|---------|-----|-----|----|-----------|--------|------|
+| Collections8  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections9  | 1      | 0         | FAIL    | 0   | 1   | 0  | 0.00      | 0.00   | 0.00 |
+| Collections10 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections1  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections2  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections3  | 2      | 2         | PASS    | 2   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections4  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections5  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections6  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections7  | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections14 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections13 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections12 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| Collections11 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL         | 15     | 14        | 13/14   | 14  | 1   | 0  | 0.93      | 1.00   | 0.96 |
 
 - **DataStructureTest** - failed: 0, passed: 0, ignored: 0 of 6 test `(100%)`
 
