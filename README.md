@@ -175,7 +175,15 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Datastructures3 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 | TOTAL           | 6     | 5        | 5/6    | 5  | 1  | 0  | 0.83      | 1.00   | 0.91 |
 
-- **FactoryTest** - failed: 0, passed: 0, ignored: 0 of  3 test `(100%)`
+
+- **FactoryTest** - failed: 0, passed: 3 of 3 tests. `(100.00%)`
+
+| Test       | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|------------|-------|----------|--------|----|----|----|-----------|--------|------|
+| Factories1 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Factories2 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Factories3 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL      | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 
 - **InterTest** - failed: 0, passed: 0, ignored: 0 of  14 test `(85.71%)`
 
