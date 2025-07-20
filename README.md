@@ -206,6 +206,14 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Inter3  | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 | TOTAL   | 13    | 16       | 11/14  | 11 | 0  | 3  | 1.00      | 0.79   | 0.88 |
 
-- **SessionTest** - failed: 0, passed: 0, ignored: 0 of 3 test `(0%)`
+
+- **SessionTest** - failed: 0, passed: 3 of 3 tests. `(100.00%)`
+
+| Test     | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|----------|-------|----------|--------|----|----|----|-----------|--------|------|
+| Session3 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Session2 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Session1 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL    | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 
 - **StrongUpdateTest** - failed: 0, passed: 0, ignored: 0 of 5 test `(0%)`
