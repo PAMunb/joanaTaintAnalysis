@@ -60,7 +60,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 
 #### Detailed information
 
-- **AliasingTest** - ❌ed: 4, ✅ed: 2 of 6 tests. `(33.33%)`
+- **AliasingTest** - failed: 4, passed: 2 of 6 tests. `(33.33%)`
 
 | Test      | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
 |-----------|-------|----------|--------|----|----|----|-----------|--------|------|
