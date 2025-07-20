@@ -162,7 +162,18 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
 | Collections11 | 1      | 1         | PASS    | 1   | 0   | 0  | 1.00      | 1.00   | 1.00 |
 | TOTAL         | 15     | 14        | 13/14   | 14  | 1   | 0  | 0.93      | 1.00   | 0.96 |
 
-- **DataStructureTest** - failed: 0, passed: 0, ignored: 0 of 6 test `(100%)`
+
+- **DataStructureTest** - failed: 1, passed: 5 of 6 tests. `(83.33%)`
+
+| Test            | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
+|-----------------|-------|----------|--------|----|----|----|-----------|--------|------|
+| Datastructures1 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Datastructures6 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Datastructures4 | 1     | 0        | FAIL   | 0  | 1  | 0  | 0.00      | 0.00   | 0.00 |
+| Datastructures5 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Datastructures2 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| Datastructures3 | 1     | 1        | PASS   | 1  | 0  | 0  | 1.00      | 1.00   | 1.00 |
+| TOTAL           | 6     | 5        | 5/6    | 5  | 1  | 0  | 0.83      | 1.00   | 0.91 |
 
 - **FactoryTest** - failed: 0, passed: 0, ignored: 0 of  3 test `(100%)`
 
