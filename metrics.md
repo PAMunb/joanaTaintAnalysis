@@ -1,4 +1,4 @@
-## Joana Metrics
+## JOANA Metrics
 
 > SUMMARY
 
