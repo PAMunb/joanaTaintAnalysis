@@ -24,6 +24,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.InterTestSuite"`
    * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.SessionTestSuite"`
    * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.StrongUpdateTestSuite"`
+   * Pred test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.PredTestSuite"`
    * All test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.AllTestSuite"`
    
 <!-- ### Executing the micro securibench
