@@ -1,6 +1,6 @@
 ## JOANA Metrics
 
-> SUMMARY
+> SUMMARY (*computed in November 2025.*)
 
 - **Securibench** - failed: 37, passed: 85 of 122 tests. `(69.67%)`
 
