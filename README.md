@@ -28,17 +28,7 @@ Currently, you might run the 'securibench' benchmark using JUnit test cases. Suc
    * Reflection test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.ReflectionTestSuite"`
    * Sanitizers test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.SanitizersTestSuite"`
    * All test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v1.micro.suite.AllTestSuite"`
-   
-<!-- ### Executing the micro securibench
 
-Currently, you might run the 'securibench' benchmark using JUnit test cases. Such as:
+## Metrics
 
-   * Aliasing test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.AliasingTestSuite"`
-   * Array test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.ArrayTestSuite"`
-   * Basic test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.BasicTestSuite"`
-   * Collection test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.CollectionTestSuite"`
-   * Datastructure test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.DatastructureTestSuite"`
-   * Factory test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.FactoryTestSuite"`
-   * Inter test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.InterTestSuite"`
-   * Session test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.SessionTestSuite"`
-   * StrongUpdate test suite: `mvn test -Dtest="br.unb.cic.joana.securibench.v2.micro.suite.StrongUpdateTestSuite"` -->
+To have detailed information about it, [see here.](metrics.md)
