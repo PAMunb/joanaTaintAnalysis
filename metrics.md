@@ -4,21 +4,21 @@
 
 - **Securibench** - failed: 37, passed: 85 of 122 tests. `(69.67%)`
 
-| Test           | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
-|----------------|-------|----------|--------|----|----|----|-----------|--------|------|
-| Aliasing       | 6     | 11       | 2/6    | 2  | 2  | 7  | 0.50      | 0.22   | 0.31 |
-| Arrays         | 10    | 9        | 9/10   | 9  | 1  | 0  | 0.90      | 1.00   | 0.95 |
-| Basic          | 45    | 61       | 25/42  | 26 | 6  | 22 | 0.81      | 0.54   | 0.65 |
-| Collections    | 15    | 14       | 13/14  | 14 | 1  | 0  | 0.93      | 1.00   | 0.96 |
-| Datastructures | 6     | 5        | 5/6    | 5  | 1  | 0  | 0.83      | 1.00   | 0.91 |
-| Factories      | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
-| Inter          | 13    | 16       | 11/14  | 11 | 0  | 3  | 1.00      | 0.79   | 0.88 |
-| Session        | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
-| StrongUpdates  | 5     | 1        | 1/5    | 1  | 4  | 0  | 0.20      | 1.00   | 0.33 |
-| Pred           | 8     | 5        | 6/9    | 5  | 3  | 0  | 0.63      | 1.00   | 0.77 |
-| Reflection     | 3     | 4        | 3/4    | 3  | 0  | 1  | 1.00      | 0.75   | 0.86 |
-| Sanitizer      | 6     | 6        | 4/6    | 4  | 1  | 1  | 0.80      | 0.80   | 0.80 |
-| TOTAL          | 123   | 138      | 85/122 | 86 | 19 | 34 | 0.82      | 0.72   | 0.77 |
+| Test           | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1    | Pass rate |
+|----------------|-------|----------|--------|----|----|----|-----------|--------|-------|-----------|
+| Aliasing       | 6     | 11       | 2/6    | 2  | 2  | 7  | 0.50      | 0.22   | 0.31  | 33.33%    |
+| Arrays         | 10    | 9        | 9/10   | 9  | 1  | 0  | 0.90      | 1.00   | 0.95  | 90%       |
+| Basic          | 45    | 61       | 25/42  | 26 | 6  | 22 | 0.81      | 0.54   | 0.65  | 59.52%    |
+| Collections    | 15    | 14       | 13/14  | 14 | 1  | 0  | 0.93      | 1.00   | 0.96  | 92.86%    |
+| Datastructures | 6     | 5        | 5/6    | 5  | 1  | 0  | 0.83      | 1.00   | 0.91  | 83.33%    |
+| Factories      | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00  | 100%      |
+| Inter          | 13    | 16       | 11/14  | 11 | 0  | 3  | 1.00      | 0.79   | 0.88  | 78.57%    |
+| Session        | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00  | 100%      |
+| StrongUpdates  | 5     | 1        | 1/5    | 1  | 4  | 0  | 0.20      | 1.00   | 0.33  | 20%       |
+| Pred           | 8     | 5        | 6/9    | 5  | 3  | 0  | 0.63      | 1.00   | 0.77  | 66.67%    |
+| Reflection     | 3     | 4        | 3/4    | 3  | 0  | 1  | 1.00      | 0.75   | 0.86  | 75%       |
+| Sanitizer      | 6     | 6        | 4/6    | 4  | 1  | 1  | 0.80      | 0.80   | 0.80  | 66.67%    |
+| TOTAL          | 123   | 138      | 85/122 | 86 | 19 | 34 | 0.82      | 0.72   | 0.77  | 69.67%    |
 
 
 > DETAILS
@@ -36,7 +36,7 @@
 | TOTAL      | 6     | 11       | 2/6    | 2  | 2  | 7  | 0.50      | 0.22   | 0.31 |
 
 
-- **ArraysTest** - failed: 1, passed: 9 of 10 tests. `(90.00%)`
+- **ArraysTest** - failed: 1, passed: 9 of 10 tests. `(90%)`
 
 | Test     | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
 |----------|-------|----------|--------|----|----|----|-----------|--------|------|
@@ -136,7 +136,7 @@
 | TOTAL             | 6     | 5        | 5/6    | 5  | 1  | 0  | 0.83      | 1.00   | 0.91 |
 
 
-- **FactoryTest** - failed: 0, passed: 3 of 3 tests. `(100.00%)`
+- **FactoryTest** - failed: 0, passed: 3 of 3 tests. `(100%)`
 
 | Test       | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
 |------------|-------|----------|--------|----|----|----|-----------|--------|------|
@@ -167,7 +167,7 @@
 | TOTAL   | 13     | 16        | 11/14   | 11  | 0   | 3   | 1.00       | 0.79    | 0.88 |
 
 
-- **SessionTest** - failed: 0, passed: 3 of 3 tests. `(100.00%)`
+- **SessionTest** - failed: 0, passed: 3 of 3 tests. `(100%)`
 
 | Test     | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
 |----------|-------|----------|--------|----|----|----|-----------|--------|------|
@@ -177,7 +177,7 @@
 | TOTAL    | 3     | 3        | 3/3    | 3  | 0  | 0  | 1.00      | 1.00   | 1.00 |
 
 
-- **StrongUpdateTest** - failed: 4, passed: 1 of 5 tests. `(20.00%)`
+- **StrongUpdateTest** - failed: 4, passed: 1 of 5 tests. `(20%)`
 
 | Test           | Found | Expected | Status | TP | FP | FN | Precision | Recall | F1   |
 |----------------|-------|----------|--------|----|----|----|-----------|--------|------|
@@ -207,7 +207,7 @@
 | TOTAL  | 8       | 5         | 6/9     | 5   | 3   | 0   | 0.63       | 1.00    | 0.77 |
 
 
-- **ReflectionTest** - failed: 1, passed: 3 of 4 tests. `(75.00%)`
+- **ReflectionTest** - failed: 1, passed: 3 of 4 tests. `(75%)`
 
 | Test   | Found  | Expected  | Status  | TP  | FP  | FN  | Precision  | Recall  | F1   |
 |--------|--------|-----------|---------|-----|-----|-----|------------|---------|------|
@@ -218,7 +218,7 @@
 | TOTAL  | 3      | 4         | 3/4     | 3   | 0   | 1   | 1.00       | 0.75    | 0.86 |
 
 
-- SanitizersTest - failed: 2, passed: 4 of 6 tests. `(66.67%)`
+- **SanitizersTest** - failed: 2, passed: 4 of 6 tests. `(66.67%)`
 
 | Test        | Found   | Expected   | Status   | TP   | FP   | FN   | Precision  | Recall  | F1   |
 |-------------|---------|------------|----------|------|------|------|------------|---------|------|
